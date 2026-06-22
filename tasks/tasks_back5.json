@@ -1,0 +1,20 @@
+[
+  {
+    "id": "step_onekey_B_0022",
+    "instruction": "打开高德地图搜索从上海虹桥火车站到外滩的公交路线，选换乘次数最少的方案并查看首班车时间",
+    "app": "高德地图",
+    "max_steps": 50
+  },
+  {
+    "id": "step_onekey_B_0012",
+    "instruction": "打开得到App搜索skill开发相关课程，找到四个评分超过4.8的加入我的书单",
+    "app": "得到",
+    "max_steps": 50
+  },
+  {
+    "id": "step_onekey_B_0015",
+    "instruction": "帮我把豆瓣里的音乐排行榜前五给我放到QQ音乐里新建一个歌单，并开始播放此歌单",
+    "app": "豆瓣,QQ音乐",
+    "max_steps": 80
+  }
+]

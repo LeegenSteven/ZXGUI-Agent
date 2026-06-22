@@ -1,0 +1,294 @@
+{
+  "case_id": "step_onekey_B_0022",
+  "instruction": "打开高德地图搜索从上海虹桥火车站到外滩的公交路线，选换乘次数最少的方案并查看首班车时间",
+  "max_steps": 50,
+  "device": {
+    "width": 1216,
+    "height": 2688
+  },
+  "execution": {
+    "total_steps": 20,
+    "exit_reason": "agent_completed",
+    "errors": []
+  },
+  "steps": [
+    {
+      "step": 1,
+      "action": "OPEN",
+      "params": {
+        "app_name": "高德地图"
+      },
+      "raw_output": "Thought:\n- LastEffect: N/A\n- Progress: 0/1 done，高德地图尚未打开，需要先启动应用。\n- Next: 打开高德地图应用。\nAction: open(app_name='高德地图')",
+      "screenshot": "step_01.png",
+      "execution_error": null
+    },
+    {
+      "step": 2,
+      "action": "CLICK",
+      "params": {
+        "point": [
+          321,
+          577
+        ]
+      },
+      "raw_output": "Thought:\n- LastEffect: 已成功打开高德地图，当前界面显示首页搜索栏和功能按钮，高德地图主界面加载完成。\n- Progress: 0/1 done，已打开高德地图，接下来需要设置起点和终点搜索公交路线。先点击搜索框激活输入。\n- Next: 点击搜索框准备输入起点和终点。\nAction: click(point='<point>321 577</point>')",
+      "screenshot": "step_02.png",
+      "execution_error": null
+    },
+    {
+      "step": 3,
+      "action": "TYPE",
+      "params": {
+        "text": "从上海虹桥火车站到外滩的公交路线"
+      },
+      "raw_output": "Thought:\n- LastEffect: 搜索框已激活，现在可以输入搜索内容。当前截图显示搜索框内已有\"外滩\"，历史记录里存在目标搜索词，不过需要直接输入完整的搜索内容。\n- Progress: 1/？done，已打开高德地图并激活搜索框，接下来需要输入搜索内容。\n- Next: 在搜索框输入\"从上海虹桥火车站到外滩的公交路线\"。\nAction: type(content='从上海虹桥火车站到外滩的公交路线')",
+      "screenshot": "step_03.png",
+      "execution_error": null
+    },
+    {
+      "step": 4,
+      "action": "CLICK",
+      "params": {
+        "point": [
+          857,
+          120
+        ]
+      },
+      "raw_output": "Thought:\n- LastEffect: 搜索框已经输入完整搜索内容，当前界面显示相关搜索建议，输入操作已生效。\n- Progress: 2/4 done，已打开高德地图、激活搜索框并输入搜索内容，下一步需要点击搜索按钮获取路线。\n- Next: 点击右上角蓝色的\"搜索\"按钮，执行搜索获取路线结果。\nAction: click(point='<point>857 120</point>')",
+      "screenshot": "step_04.png",
+      "execution_error": null
+    },
+    {
+      "step": 5,
+      "action": "CLICK",
+      "params": {
+        "point": [
+          300,
+          178
+        ]
+      },
+      "raw_output": "Thought:\n- LastEffect: 点击搜索后，当前界面显示确认起点的列表，第一个选项是\"上海虹桥站\"，与目标起点上海虹桥火车站匹配，上一步操作已生效，进入起点确认环节。\n- Progress: 3/4 done，已完成打开应用、输入搜索内容、点击搜索，现在需要确认起点，接下来选择匹配的起点。\n- Next: 点击第一个选项\"上海虹桥站\"确认起点。\nAction: click(point='<point>300 178</point>')",
+      "screenshot": "step_05.png",
+      "execution_error": null
+    },
+    {
+      "step": 6,
+      "action": "CLICK",
+      "params": {
+        "point": [
+          250,
+          180
+        ]
+      },
+      "raw_output": "Thought:\n- LastEffect: 点击确认起点后，当前界面显示确认终点的列表，第一个选项是\"外滩\"，地址是中山东二路1号，与目标终点外滩匹配，上一步操作已生效，进入终点确认环节。\n- Progress: 4/5 done，已完成打开应用、输入搜索内容、点击搜索、确认起点，现在需要确认终点。\n- Next: 点击第一个选项\"外滩（中山东二路1号）\"确认终点。\nAction: click(point='<point>250 180</point>')",
+      "screenshot": "step_06.png",
+      "execution_error": null
+    },
+    {
+      "step": 7,
+      "action": "CLICK",
+      "params": {
+        "point": [
+          120,
+          208
+        ]
+      },
+      "raw_output": "Thought:\n- LastEffect: 确认起点和终点后，当前界面显示公共交通的路线列表，已进入公共交通路线页面，上一步操作生效。\n- Progress: 5/6 done，已完成打开应用、输入搜索内容、点击搜索、确认起点和终点，现在需要找到换乘次数最少的方案，当前界面有\"偏好\"按钮，需要点击偏好设置筛选换乘次数最少的排序。\n- Next: 点击\"偏好\"按钮打开偏好设置，选择换乘次数最少的排序方式。\nAction: click(point='<point>120 208</point>')",
+      "screenshot": "step_07.png",
+      "execution_error": null
+    },
+    {
+      "step": 8,
+      "action": "SCROLL",
+      "params": {
+        "start_point": [
+          481,
+          300
+        ],
+        "end_point": [
+          481,
+          500
+        ]
+      },
+      "raw_output": "Thought:\n- LastEffect: 点击\"偏好\"按钮后，弹出了偏好设置面板，当前面板只显示了\"推荐骑行方案\"开关，没有看到排序选项，需要向下滑动查看更多偏好设置选项找到换乘次数最少的选项。\n- Progress: 5/6 done，已完成打开应用、输入搜索内容、点击搜索、确认起点和终点、打开偏好面板，需要找到并选择换乘次数最少的排序方式。\n- Next: 向下滑动偏好设置面板，查看更多设置选项找到换乘次数相关选项。\nAction: scroll(start_point='<point>481 300</point>', end_point='<point>481 600</point>')",
+      "screenshot": "step_08.png",
+      "execution_error": null
+    },
+    {
+      "step": 9,
+      "action": "SCROLL",
+      "params": {
+        "start_point": [
+          800,
+          210
+        ],
+        "end_point": [
+          600,
+          210
+        ]
+      },
+      "raw_output": "Thought:\n- LastEffect: 向下滑动偏好设置面板后，当前面板依然只显示\"推荐骑行方案\"开关和取消、保存按钮，没有找到换乘次数相关排序选项，滑动操作未找到目标选项。\n- Progress: 5/6 done，已完成打开应用、输入搜索内容、点击搜索、确认起点和终点、打开偏好面板，滑动后仍未找到换乘次数最少的排序选项，现在发现偏好面板没有对应选项，应该关闭偏好面板，在顶部的排序标签中寻找，当前顶部有\"高德推荐\"\"地铁优先\"，需要横向滑动顶部排序标签查看是否有\"少换乘\"选项。\n- Next: 横向滑动顶部排序标签栏，从右向左滑动查看更多排序选项，寻找\"少换乘\"（换乘次数最少）选项。\nAction: scroll(start_point='<point>800 210</point>', end_point='<point>200 210</point>')",
+      "screenshot": "step_09.png",
+      "execution_error": null
+    },
+    {
+      "step": 10,
+      "action": "CLICK",
+      "params": {
+        "point": [
+          266,
+          406
+        ]
+      },
+      "raw_output": "Thought:\n- LastEffect: 上一步滑动偏好面板没有找到换乘次数相关选项，于是尝试滑动顶部排序标签，当前截图显示顶部排序标签还是只显示高德推荐和地铁优先，滑动操作未显示更多选项，不过发现偏好面板挡住了？不，偏好面板是弹出层，所以其实我应该先点击取消关闭偏好面板，再去操作顶部标签。\n- Progress: 5/6 done，已完成打开应用、输入搜索内容、点击搜索、确认起点和终点，打开偏好面板后未找到排序选项，需要关闭偏好面板。\n- Next: 点击偏好面板里的\"取消\"按钮关闭面板，再继续寻找换乘次数最少的排序选项。\nAction: click(point='<point>266 406</point>')",
+      "screenshot": "step_10.png",
+      "execution_error": null
+    },
+    {
+      "step": 11,
+      "action": "SCROLL",
+      "params": {
+        "start_point": [
+          850,
+          210
+        ],
+        "end_point": [
+          650,
+          210
+        ]
+      },
+      "raw_output": "Thought:\n- LastEffect: 关闭偏好面板后，当前界面显示顶部排序标签为高德推荐和地铁优先，需要滑动顶部标签栏找到\"少换乘\"选项，当前还未找到换乘次数最少的排序按钮，上一步关闭偏好面板操作生效，现在可以操作顶部标签栏了。\n- Progress: 5/6 done，已完成打开应用、输入搜索内容、点击搜索、确认起点和终点、关闭偏好面板，现在需要找到换乘次数最少的排序选项。\n- Next: 横向滑动顶部排序标签栏，从右向左滑动查看更多选项，寻找\"少换乘\"（换乘次数最少）选项。\nAction: scroll(start_point='<point>850 210</point>', end_point='<point>250 210</point>')",
+      "screenshot": "step_11.png",
+      "execution_error": null
+    },
+    {
+      "step": 12,
+      "action": "SCROLL",
+      "params": {
+        "start_point": [
+          900,
+          212
+        ],
+        "end_point": [
+          700,
+          212
+        ]
+      },
+      "raw_output": "Thought:\n- LastEffect: 滑动顶部标签栏后，当前截图显示出现了\"步行少\"标签，还没看到\"少换乘\"（换乘次数最少）选项，当前标签栏只显示高德推荐、地铁优先、步行少，说明还有更多选项在右侧，需要继续向左滑动。\n- Progress: 5/6 done，已完成打开高德地图、输入搜索内容、点击搜索、确认起点终点、关闭偏好面板，滑动顶部标签栏后出现了更多选项，但还未找到换乘次数最少的选项。\n- Next: 继续横向向左滑动顶部排序标签栏，查看剩余选项找到换乘次数最少的选项。\nAction: scroll(start_point='<point>900 212</point>', end_point='<point>400 212</point>')",
+      "screenshot": "step_12.png",
+      "execution_error": null
+    },
+    {
+      "step": 13,
+      "action": "CLICK",
+      "params": {
+        "point": [
+          855,
+          209
+        ]
+      },
+      "raw_output": "Thought:\n- LastEffect: 继续向左滑动顶部标签栏后，当前截图显示找到了\"换乘少\"标签，该选项对应换乘次数最少的方案，滑动操作生效，现在\"换乘少\"标签已出现在顶部标签栏中。\n- Progress: 5/6 done，已完成打开应用、输入搜索内容、点击搜索、确认起点和终点、找到\"换乘少\"（换乘次数最少）选项，接下来需要点击该选项进行排序。\n- Next: 点击顶部标签栏中的\"换乘少\"选项，切换到换乘次数最少的路线排序。\nAction: click(point='<point>855 209</point>')",
+      "screenshot": "step_13.png",
+      "execution_error": null
+    },
+    {
+      "step": 14,
+      "action": "CLICK",
+      "params": {
+        "point": [
+          450,
+          335
+        ]
+      },
+      "raw_output": "Thought:\n- LastEffect: 点击\"换乘少\"标签后，当前界面显示按换乘少排序后的路线列表，第一个方案就是换乘次数最少的，换乘次数为2次，点击操作已生效，现在需要查看这个方案的首班车时间。\n- Progress: 6/7 done，已完成打开高德地图、输入搜索内容、点击搜索、确认起点终点、找到并点击换乘少排序选项，现在需要进入第一个路线方案查看首班车时间。\n- Next: 点击第一个48分钟的路线方案，进入详情页查看首班车时间。\nAction: click(point='<point>450 335</point>')",
+      "screenshot": "step_14.png",
+      "execution_error": null
+    },
+    {
+      "step": 15,
+      "action": "SCROLL",
+      "params": {
+        "start_point": [
+          500,
+          700
+        ],
+        "end_point": [
+          500,
+          500
+        ]
+      },
+      "raw_output": "Thought:\n- LastEffect: 点击第一个路线方案后，当前界面显示该方案的详情，只显示了步行段信息，首班车时间未在当前可见区域，上一步操作生效，进入了路线详情页。\n- Progress: 6/7 done，已完成打开应用、搜索路线、确认起点终点、选择换乘少排序、进入第一个方案详情，现在需要向下滑动页面查看首班车时间。\n- Next: 向下滑动页面，查看更多行程信息找到首班车时间。\nAction: scroll(start_point='<point>500 700</point>', end_point='<point>500 400</point>')",
+      "screenshot": "step_15.png",
+      "execution_error": null
+    },
+    {
+      "step": 16,
+      "action": "SCROLL",
+      "params": {
+        "start_point": [
+          500,
+          750
+        ],
+        "end_point": [
+          500,
+          550
+        ]
+      },
+      "raw_output": "Thought:\n- LastEffect: 向下滑动页面后，当前界面显示了虹桥火车站（南1入口）的2号线乘车信息，但还没看到首班车时间，当前只显示了预计车辆到达时间，需要继续向下滑动页面查看更多信息，滑动操作已展示更多行程内容但未找到目标信息。\n- Progress: 6/7 done，已完成打开高德地图、输入搜索内容、点击搜索、确认起点和终点、选择换乘少排序、进入第一个方案详情，滑动页面后仍未找到首班车时间，需要继续滑动查看。\n- Next: 继续向下滑动页面，查看更多行程信息找到首班车时间。\nAction: scroll(start_point='<point>500 750</point>', end_point='<point>500 450</point>')",
+      "screenshot": "step_16.png",
+      "execution_error": null
+    },
+    {
+      "step": 17,
+      "action": "SCROLL",
+      "params": {
+        "start_point": [
+          500,
+          400
+        ],
+        "end_point": [
+          500,
+          600
+        ]
+      },
+      "raw_output": "Thought: - LastEffect: 继续向下滑动后，当前界面显示了南京东路和终点外滩的信息，但还是没找到首班车时间，之前只看到了虹桥火车站的发车时刻，注意到有\"到站时刻表\"按钮，应该是在那里查看首班车时间，需要向上滑动回到虹桥火车站的乘车信息部分。\n- Progress: 6/7 done，已完成打开应用、搜索路线、确认起点终点、选择换乘少排序、进入第一个方案详情，滑动页面后仍未找到首班车时间，现在需要回到乘车信息区域点击到站时刻表。\n- Next: 向上滑动页面，回到虹桥火车站（南1入口）的2号线乘车信息区域，找到到站时刻表按钮。\nAction: scroll(start_point='<point>500 400</point>', end_point='<point>500 700</point>')",
+      "screenshot": "step_17.png",
+      "execution_error": null
+    },
+    {
+      "step": 18,
+      "action": "CLICK",
+      "params": {
+        "point": [
+          775,
+          568
+        ]
+      },
+      "raw_output": "Thought: - LastEffect: 向上滑动后，当前界面回到了虹桥火车站（南1入口）的2号线乘车信息区域，找到了\"到站时刻表\"按钮，滑动操作生效，已经回到目标区域，现在需要点击该按钮查看时刻表找到首班车时间。 - Progress: 6/7 done，已完成打开高德地图、输入搜索内容、点击搜索、确认起点终点、选择换乘少排序、进入第一个方案详情，回到了乘车信息区域，现在需要点击到站时刻表按钮查看首班车时间。 - Next: 点击\"到站时刻表\"按钮，打开时刻表查看首班车时间。\nAction: click(point='<point>775 568</point>')",
+      "screenshot": "step_18.png",
+      "execution_error": null
+    },
+    {
+      "step": 19,
+      "action": "CLICK",
+      "params": {
+        "point": [
+          725,
+          272
+        ]
+      },
+      "raw_output": "Thought:\n- LastEffect: 点击到站时刻表后，当前界面弹出了地铁2号线的时刻表窗口，包含\"到站时刻表\"和\"官方运营时间\"两个标签，首班车时间应该在\"官方运营时间\"里，点击操作已成功打开时刻表窗口。\n- Progress: 7/8 done，已完成打开应用、搜索路线、确认起点终点、选择换乘少排序、进入第一个方案详情、找到并打开到站时刻表窗口，现在需要切换到官方运营时间标签查看首班车时间。\n- Next: 点击\"官方运营时间\"标签，查看地铁2号线的首班车时间。\nAction: click(point='<point>725 272</point>')",
+      "screenshot": "step_19.png",
+      "execution_error": null
+    },
+    {
+      "step": 20,
+      "action": "COMPLETE",
+      "params": {},
+      "raw_output": "Thought:\n- LastEffect: 点击\"官方运营时间\"标签后，当前界面显示了地铁2号线（蟠祥路国家会展中心→浦东1号2号航站楼方向）的首末班车信息，首班车时间为05:25，点击操作已生效，找到了换乘次数最少方案中第一程的首班车时间。\n- Progress: 8/8 done，已完成打开高德地图、搜索从上海虹桥火车站到外滩的公交路线、选择换乘次数最少的方案、查看该方案中首班车时间，当前已经看到首班车时间为05:25。\n- Next: 任务已完成，已找到换乘次数最少方案的首班车时间为05:25。\nAction: complete(content='已在高德地图搜索到从上海虹桥火车站到外滩换乘次数最少的公交路线，该路线中地铁2号线首班车时间为05:25')",
+      "screenshot": "step_20.png",
+      "execution_error": null
+    }
+  ],
+  "summary_visualization": "summary.png"
+}

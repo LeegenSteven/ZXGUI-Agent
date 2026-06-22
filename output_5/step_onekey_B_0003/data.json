@@ -1,0 +1,126 @@
+{
+  "case_id": "step_onekey_B_0003",
+  "instruction": "打开滴滴出行搜索从中兴通讯西安长安基地到西安欧亚学院需要多少钱，中间经过一下陕西考古博物馆",
+  "max_steps": 30,
+  "device": {
+    "width": 1216,
+    "height": 2688
+  },
+  "execution": {
+    "total_steps": 9,
+    "exit_reason": "agent_completed",
+    "errors": []
+  },
+  "steps": [
+    {
+      "step": 1,
+      "action": "OPEN",
+      "params": {
+        "app_name": "滴滴出行"
+      },
+      "raw_output": "Thought:\n- LastEffect: N/A\n- Progress: 0/1 done，尚未打开滴滴出行App，需要先启动应用。\n- Next: 打开滴滴出行应用。\nAction: open(app_name='滴滴出行')",
+      "screenshot": "step_01.png",
+      "execution_error": null
+    },
+    {
+      "step": 2,
+      "action": "CLICK",
+      "params": {
+        "point": [
+          328,
+          468
+        ]
+      },
+      "raw_output": "Thought:\n- LastEffect: 滴滴出行已成功打开，当前显示首页地图和功能选项，搜索框显示“输入目的地”。\n- Progress: 0/1 done，需要设置起点、经停点、终点。首先需要设置起点为中兴通讯西安长安基地，先点击上车点所在区域？不对，当前显示“正在获取上车地点”，应该先点击搜索框上方的“正在获取上车地点”，或者直接设置起点，先点击搜索框？不对，滴滴的起点获取，现在需要修改起点为中兴通讯西安长安基地，所以先点击“正在获取上车地点”这个区域，进入起点设置。\n- Next: 点击“正在获取上车地点”区域，进入起点设置页面。\nAction: click(point='<point>328 468</point>')",
+      "screenshot": "step_02.png",
+      "execution_error": null
+    },
+    {
+      "step": 3,
+      "action": "CLICK",
+      "params": {
+        "point": [
+          386,
+          385
+        ]
+      },
+      "raw_output": "Thought:\n- LastEffect: 上一步点击后进入起点输入页面，当前截图里可见\"中兴通讯西安长安基地\"选项已经在列表中，匹配起点要求，上一步生效。\n- Progress: 0/3 done，已进入起点设置页面，还需要选择起点、添加经停点、选择终点。\n- Next: 点击列表中的\"中兴通讯西安长安基地\"选项，设置起点。\nAction: click(point='<point>386 385</point>')",
+      "screenshot": "step_03.png",
+      "execution_error": null
+    },
+    {
+      "step": 4,
+      "action": "CLICK",
+      "params": {
+        "point": [
+          300,
+          520
+        ]
+      },
+      "raw_output": "Thought:\n- LastEffect: 起点已成功设置为中兴通讯西安长安基地东侧，当前界面显示起点设置完成，需要添加经停点并设置终点，首先需要点击目的地输入框，进入目的地设置，之后添加经停点。\n- Progress: 1/3 done，起点已设置完成，还需要添加经停点陕西考古博物馆，设置终点西安欧亚学院。\n- Next: 点击“输入目的地”搜索框，进入目的地设置页面，准备添加经停点和终点。\nAction: click(point='<point>300 520</point>')",
+      "screenshot": "step_04.png",
+      "execution_error": null
+    },
+    {
+      "step": 5,
+      "action": "CLICK",
+      "params": {
+        "point": [
+          843,
+          79
+        ]
+      },
+      "raw_output": "Thought:\n- LastEffect: 上一步点击后进入终点设置页面，当前页面右上角可见\"+途经点\"按钮，符合添加经停点的需求，上一步生效。\n- Progress: 1/3 done，起点已设置完成，需要先添加经停点陕西考古博物馆，再设置终点西安欧亚学院，当前处于终点设置页面，需要先点击\"+途经点\"添加经停。\n- Next: 点击右上角\"+途经点\"按钮，准备添加经停点陕西考古博物馆。\nAction: click(point='<point>843 79</point>')",
+      "screenshot": "step_05.png",
+      "execution_error": null
+    },
+    {
+      "step": 6,
+      "action": "CLICK",
+      "params": {
+        "point": [
+          310,
+          415
+        ]
+      },
+      "raw_output": "Thought:\n- LastEffect: 点击\"+途经点\"后，当前页面已切换到途经点输入界面，推荐列表中可见\"陕西考古博物馆\"选项，匹配经停点要求，上一步生效。\n- Progress: 1/3 done，起点已设置完成，现在需要选择经停点陕西考古博物馆，还需要设置终点西安欧亚学院。\n- Next: 点击推荐列表中的\"陕西考古博物馆\"选项，设置经停点。\nAction: click(point='<point>310 415</point>')",
+      "screenshot": "step_06.png",
+      "execution_error": null
+    },
+    {
+      "step": 7,
+      "action": "CLICK",
+      "params": {
+        "point": [
+          270,
+          355
+        ]
+      },
+      "raw_output": "Thought:\n- LastEffect: 上一步已成功选择经停点为陕西考古博物馆，当前截图可见经停点输入框已填入\"陕西考古博物馆\"，上一步生效。现在需要设置终点为西安欧亚学院，当前推荐列表中可见\"西安欧亚学院(北区)\"选项，符合目标终点要求。\n- Progress: 2/3 done，起点、经停点已设置完成，还需要设置终点西安欧亚学院。\n- Next: 点击推荐列表中的\"西安欧亚学院(北区)\"选项，设置终点。\nAction: click(point='<point>270 355</point>')",
+      "screenshot": "step_07.png",
+      "execution_error": null
+    },
+    {
+      "step": 8,
+      "action": "CLICK",
+      "params": {
+        "point": [
+          847,
+          182
+        ]
+      },
+      "raw_output": "Thought:\n- LastEffect: 起点中兴通讯西安长安基地、经停点陕西考古博物馆、终点西安欧亚学院(北区)都已设置完成，当前截图显示右上角橙色\"完成\"按钮，上一步设置终点生效。\n- Progress: 3/3 done，起点、经停点、终点均已设置完成，现在需要点击完成进入价格查询页面。\n- Next: 点击右上角橙色\"完成\"按钮，确认地点设置，进入路线和价格页面。\nAction: click(point='<point>847 182</point>')",
+      "screenshot": "step_08.png",
+      "execution_error": null
+    },
+    {
+      "step": 9,
+      "action": "COMPLETE",
+      "params": {},
+      "raw_output": "Thought:\n- LastEffect: 点击\"完成\"后成功进入路线和价格页面，当前截图可见各车型价格已显示，上一步生效。\n- Progress: 3/3 done，起点中兴通讯西安长安基地、经停点陕西考古博物馆、终点西安欧亚学院(北区)均已设置完成，各车型价格已成功获取。\n- Next: 任务完成，提取各车型价格信息。\nNote: 从中兴通讯西安长安基地东侧经陕西考古博物馆到西安欧亚学院(北区)的各车型价格：特惠快车一口价39.3元，滴滴快车一口价46.7元，超值出租车固定价50.9元，出租车预估52.5元，滴滴特快一口价56.9元，滴滴轻享一口价60.1元，滴滴专车一口价67元。\nAction: complete(content='已查询到从中兴通讯西安长安基地经陕西考古博物馆到西安欧亚学院的各车型价格：特惠快车一口价39.3元，滴滴快车一口价46.7元，超值出租车固定价50.9元，出租车预估52.5元，滴滴特快一口价56.9元，滴滴轻享一口价60.1元，滴滴专车一口价67元。')",
+      "screenshot": "step_09.png",
+      "execution_error": null
+    }
+  ],
+  "summary_visualization": "summary.png"
+}

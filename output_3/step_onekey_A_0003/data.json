@@ -1,0 +1,140 @@
+{
+  "case_id": "step_onekey_A_0003",
+  "instruction": "去爱奇艺打开狂飙的评论区，发布评论：太好看了",
+  "max_steps": 30,
+  "device": {
+    "width": 1216,
+    "height": 2688
+  },
+  "execution": {
+    "total_steps": 10,
+    "exit_reason": "agent_completed",
+    "errors": []
+  },
+  "steps": [
+    {
+      "step": 1,
+      "action": "OPEN",
+      "params": {
+        "app_name": "爱奇艺"
+      },
+      "raw_output": "Thought:\n- 进度：还未打开爱奇艺应用，这是第一步，需要先启动爱奇艺。\n- Next: 打开爱奇艺App，进入应用后再搜索狂飙。\nAction: open(app_name='爱奇艺')",
+      "screenshot": "step_01.png",
+      "execution_error": null
+    },
+    {
+      "step": 2,
+      "action": "CLICK",
+      "params": {
+        "point": [
+          838,
+          47
+        ]
+      },
+      "raw_output": "Thought: - 进度：刚打开爱奇艺，现在出现了广告弹窗，需要先关闭它才能进入主界面继续搜索狂飙。 - Next: 点击右上角的关闭按钮，关闭这个广告弹窗。\nAction: click(point='<point>838 47</point>')",
+      "screenshot": "step_02.png",
+      "execution_error": null
+    },
+    {
+      "step": 3,
+      "action": "CLICK",
+      "params": {
+        "point": [
+          66,
+          64
+        ]
+      },
+      "raw_output": "Thought: - 进度：现在在消息页面，不是我们需要的搜索狂飙的页面，需要先返回上一页，回到能搜索的界面。 - Next: 点击左上角的返回箭头，回到之前的页面，继续寻找搜索入口。 Action: click(point='<point>66 64</point>')",
+      "screenshot": "step_03.png",
+      "execution_error": null
+    },
+    {
+      "step": 4,
+      "action": "CLICK",
+      "params": {
+        "point": [
+          250,
+          555
+        ]
+      },
+      "raw_output": "Thought:\n- 进度：已经回到爱奇艺首页，看到了正在追的“狂飙·正义接力”入口，接下来需要点进去进入播放页面，才能打开评论区。\n- Next: 点击“狂飙·正义接力”的封面，进入该剧的播放页面。\nTargetBox: [left=21, 486, right=481, 659]\nAction: click(point='<point>250 555</point>')",
+      "screenshot": "step_04.png",
+      "execution_error": null
+    },
+    {
+      "step": 5,
+      "action": "CLICK",
+      "params": {
+        "point": [
+          207,
+          347
+        ]
+      },
+      "raw_output": "Thought:\n- 进度：已经进入狂飙的播放页面，看到了导航栏里的“讨论”标签，这就是评论区入口，接下来需要点击它进入评论区才能发布评论。\n- Next: 点击“讨论”标签，进入狂飙的评论区。\nTargetBox: [145, 330, 280, 365]\nAction: click(point='<point>207 347</point>')",
+      "screenshot": "step_05.png",
+      "execution_error": null
+    },
+    {
+      "step": 6,
+      "action": "CLICK",
+      "params": {
+        "point": [
+          289,
+          971
+        ]
+      },
+      "raw_output": "Thought: - 进度：已经成功进入狂飙的讨论（评论区）页面，现在需要点击底部的“参与讨论”输入框，激活它才能输入要发布的评论。 - Next: 点击底部的“参与讨论”输入框，激活输入框准备输入评论内容。 TargetBox: [21, 950, 685, 990] Action: click(point='<point>289 971</point>')",
+      "screenshot": "step_06.png",
+      "execution_error": null
+    },
+    {
+      "step": 7,
+      "action": "TYPE",
+      "params": {
+        "text": "太好看了"
+      },
+      "raw_output": "Thought: - 进度：输入框已经激活，现在需要输入评论内容“太好看了”，准备之后发布。 - Next: 在激活的参与讨论输入框中输入“太好看了”。\nAction: type(content='太好看了')",
+      "screenshot": "step_07.png",
+      "execution_error": null
+    },
+    {
+      "step": 8,
+      "action": "SCROLL",
+      "params": {
+        "start_point": [
+          473,
+          800
+        ],
+        "end_point": [
+          481,
+          400
+        ]
+      },
+      "raw_output": "Thought: - 进度：已经在输入框中输入了评论“太好看了”，现在需要找到发布按钮来发布这条评论，当前截图没看到发布按钮，应该是被键盘挡住？不对，需要先看看，哦，不对，可能需要先收起？不，不对，这里可能发布按钮在上方？不对，我看一下，当前界面，取消在右上角，应该发布按钮在下方？不对，当前截图被截断了，可能需要等待？不，不对，现在，哦，不对，ADB Keyboard挡住了发布按钮，那我们需要，不对，应该是界面没显示全，向下滑动？不对，不对，应该是，哦，不对，输入完了之后，发布按钮在哪里？哦，原来在参与讨论输入完之后，应该是发布按钮在右下角？不对，当前截图底部是ADB Keyboard，所以我们需要，哦，不对，这里显示ADB Keyboard {ON}，可能是在模拟器里，那我们先，不对，让我看看，当前截图：输入框里已经有“太好看了”，现在需要找发布按钮，可能发布按钮在下方，被这个ADB条挡住了？不对，不对，应该是，我再看一下，哦，不对，这个界面，输入完成后，发布按钮应该在这个弹窗的外面？不对，不对，原来的讨论页面，底部输入框，输入之后，发布按钮在输入框旁边，现在这个是展开的输入框，那我应该，哦，不对，点击哪里？哦，不对，可能我错了，这个展开的输入框，发布按钮在哪里？哦，不对，可能需要点击“取消”旁边？不，取消是关闭，不对，哦，现在，输入已经完成，那我们看看，是不是需要点击回车？不，不对，这里不需要回车，应该发布按钮在右下角，现在当前截图没显示，那我们向上滑动？不对，应该向下滑动，看看能不能看到发布按钮？不对，界面是，输入框在上面，ADB在下面，应该向上滑动，把底部移上来？不对，drag的话，从下往上？哦，不对，当前输入内容已经好了，我看看，这个页面，应该滑动一下，让发布按钮显示出来。\nAction: scroll(start_point='<point>473 800</point>', end_point='<point>481 400</point>')",
+      "screenshot": "step_08.png",
+      "execution_error": null
+    },
+    {
+      "step": 9,
+      "action": "CLICK",
+      "params": {
+        "point": [
+          885,
+          969
+        ]
+      },
+      "raw_output": "Thought: - 进度：已经成功在输入框输入“太好看了”，现在右下角显示了绿色的“发送”按钮，也就是发布按钮，只需要点击它就能完成评论发布。 - Next: 点击右下角绿色的“发送”按钮，发布这条评论。 TargetBox: [800, 950, 975, 990] Action: click(point='<point>885 969</point>')",
+      "screenshot": "step_09.png",
+      "execution_error": null
+    },
+    {
+      "step": 10,
+      "action": "COMPLETE",
+      "params": {},
+      "raw_output": "Thought: - 进度：当前界面已经显示“发布成功”，说明我们已经在爱奇艺狂飙的评论区成功发布了评论“太好看了”，任务已经完成。\n- Next: 任务已经完成，可以结束了。\nAction: complete(content='已在爱奇艺狂飙的评论区成功发布评论：太好看了，任务完成')",
+      "screenshot": "step_10.png",
+      "execution_error": null
+    }
+  ],
+  "summary_visualization": "summary.png"
+}

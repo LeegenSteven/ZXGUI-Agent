@@ -1,0 +1,133 @@
+{
+  "case_id": "step_onekey_B_0007",
+  "instruction": "在哔哩哔哩中搜索赵丽颖筛选播放最多和最近一天和0-10分钟的视频",
+  "max_steps": 30,
+  "device": {
+    "width": 1216,
+    "height": 2688
+  },
+  "execution": {
+    "total_steps": 10,
+    "exit_reason": "agent_completed",
+    "errors": []
+  },
+  "steps": [
+    {
+      "step": 1,
+      "action": "OPEN",
+      "params": {
+        "app_name": "哔哩哔哩"
+      },
+      "raw_output": "Thought:\n- Progress: 任务需要在哔哩哔哩搜索赵丽颖并筛选视频，现在还没打开哔哩哔哩，第一步需要启动应用。\n- Next: 打开哔哩哔哩应用。\nAction: open(app_name='哔哩哔哩')",
+      "screenshot": "step_01.png",
+      "execution_error": null
+    },
+    {
+      "step": 2,
+      "action": "WAIT",
+      "params": {
+        "seconds": 3
+      },
+      "raw_output": "Thought:\n- Progress: 哔哩哔哩正在启动，现在显示开屏广告，需要等待广告结束或者点击跳过。现在倒计时还没到0，先等待一下。\n- Next: 等待广告倒计时结束，或者点击跳过按钮，这里先等待几秒让广告加载完成。\nAction: wait(seconds='3')",
+      "screenshot": "step_02.png",
+      "execution_error": null
+    },
+    {
+      "step": 3,
+      "action": "CLICK",
+      "params": {
+        "point": [
+          426,
+          65
+        ]
+      },
+      "raw_output": "Thought:\n- Progress: 已经成功进入哔哩哔哩首页，现在需要开始搜索赵丽颖，首先得点击顶部的搜索框激活它。\n- Next: 点击顶部搜索框，准备输入“赵丽颖”进行搜索。\nAction: click(point='<point>426 65</point>')",
+      "screenshot": "step_03.png",
+      "execution_error": null
+    },
+    {
+      "step": 4,
+      "action": "TYPE",
+      "params": {
+        "text": "赵丽颖"
+      },
+      "raw_output": "Thought:\n- Progress: 搜索框已经激活，现在需要输入搜索关键词“赵丽颖”，准备后续搜索。\n- Next: 在搜索框中输入“赵丽颖”。\nAction: type(content='赵丽颖')",
+      "screenshot": "step_04.png",
+      "execution_error": null
+    },
+    {
+      "step": 5,
+      "action": "CLICK",
+      "params": {
+        "point": [
+          912,
+          71
+        ]
+      },
+      "raw_output": "Thought:\n- Progress: 已经在搜索框输入了“赵丽颖”，现在需要点击搜索按钮提交搜索，进入搜索结果页之后才能进行筛选。\n- Next: 点击右上角粉色的“搜索”按钮，执行搜索进入结果页面。\nAction: click(point='<point>912 71</point>')",
+      "screenshot": "step_05.png",
+      "execution_error": null
+    },
+    {
+      "step": 6,
+      "action": "CLICK",
+      "params": {
+        "point": [
+          928,
+          125
+        ]
+      },
+      "raw_output": "Thought:\n- Progress: 已经成功搜索到赵丽颖相关结果，现在需要打开筛选界面来设置播放最多、最近一天和0-10分钟的筛选条件，首先点击右上角的筛选按钮。\n- Next: 点击右上角的漏斗形状的筛选按钮，进入筛选设置页面。\nAction: click(point='<point>928 125</point>')",
+      "screenshot": "step_06.png",
+      "execution_error": null
+    },
+    {
+      "step": 7,
+      "action": "CLICK",
+      "params": {
+        "point": [
+          618,
+          242
+        ]
+      },
+      "raw_output": "Thought: - Progress: 已经进入筛选界面，现在需要依次设置筛选条件，首先设置排序方式为播放最多，所以点击“播放多”按钮。\n- Next: 点击排序方式里的“播放多”选项，将排序设置为播放最多。\nAction: click(point='<point>618 242</point>')",
+      "screenshot": "step_07.png",
+      "execution_error": null
+    },
+    {
+      "step": 8,
+      "action": "CLICK",
+      "params": {
+        "point": [
+          371,
+          342
+        ]
+      },
+      "raw_output": "Thought:\n- Progress: 已经成功将排序方式设置为播放最多，接下来需要设置发布时间为最近一天，所以点击“最近一天”选项。\n- Next: 点击发布时间分类里的“最近一天”选项，设置发布时间筛选条件。\nTargetBox: [x1=268, 318, x2=478, 358]\nAction: click(point='<point>371 342</point>')",
+      "screenshot": "step_08.png",
+      "execution_error": null
+    },
+    {
+      "step": 9,
+      "action": "CLICK",
+      "params": {
+        "point": [
+          375,
+          491
+        ]
+      },
+      "raw_output": "Thought:\n- Progress: 已经设置好了播放最多和最近一天的筛选条件，现在还差设置内容时长为0-10分钟，完成这一个条件设置后就可以应用筛选了。\n- Next: 点击内容时长分类里的“0-10分钟”选项，设置时长筛选条件。\nTargetBox: [x1=268, 473, x2=478, 509]\nAction: click(point='<point>375 491</point>')",
+      "screenshot": "step_09.png",
+      "execution_error": null
+    },
+    {
+      "step": 10,
+      "action": "COMPLETE",
+      "params": {},
+      "raw_output": "Thought:\n- Progress: 已经成功设置了所有筛选条件：播放最多（播放多）、最近一天、0-10分钟，现在需要应用这些筛选条件，获取筛选后的结果，只需要点击筛选完成，这里直接点击筛选按钮外的内容区域？不对，应该是点击右上角的筛选图标？不，不对，其实哔哩哔哩的筛选设置后自动生效？不对，不对，这个筛选面板设置后，直接就会生效？不，不对，看截图，现在已经设置完所有条件，需要确认筛选，其实这里点击筛选漏斗图标就是收起筛选面板并应用筛选，或者其实已经设置好了，现在应该就完成筛选了？哦，不对，现在所有条件都选好了：排序是播放多（播放最多），发布时间最近一天，时长0-10分钟，所有条件都满足了，所以任务已经完成了？不对，不对，需要确认应用筛选。哦，不对，哔哩哔哩这里，设置完筛选条件后自动生效，所以现在三个条件都已经设置正确，任务完成。\n- Next: 确认所有筛选条件都已设置，任务完成。\nAction: complete(content='已在哔哩哔哩中搜索赵丽颖，并完成播放最多、最近一天、0-10分钟视频的筛选，任务完成')",
+      "screenshot": "step_10.png",
+      "execution_error": null
+    }
+  ],
+  "summary_visualization": "summary.png"
+}

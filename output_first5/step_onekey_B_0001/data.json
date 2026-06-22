@@ -1,0 +1,136 @@
+{
+  "case_id": "step_onekey_B_0001",
+  "instruction": "在携程旅行的酒店里预订6月28日到6月30日丽江低价优先里最便宜的酒店的单人女生床位房",
+  "max_steps": 30,
+  "device": {
+    "width": 1216,
+    "height": 2688
+  },
+  "execution": {
+    "total_steps": 10,
+    "exit_reason": "agent_completed",
+    "errors": []
+  },
+  "steps": [
+    {
+      "step": 1,
+      "action": "OPEN",
+      "params": {
+        "app_name": "携程旅行"
+      },
+      "raw_output": "Thought:\n- Progress: 还没有打开携程旅行App，这是第一步，需要先启动应用。\n- Next: 打开携程旅行App，进入应用后才能开始预订酒店。\nAction: open(app_name='携程旅行')",
+      "screenshot": "step_01.png",
+      "execution_error": null
+    },
+    {
+      "step": 2,
+      "action": "CLICK",
+      "params": {
+        "point": [
+          120,
+          140
+        ]
+      },
+      "raw_output": "Thought:\n- Progress: 已经打开携程旅行App，进入首页，现在需要进入酒店预订页面。\n- Next: 点击左上角的“酒店”按钮，进入酒店预订界面，开始后续的城市和日期选择。\nTargetBox: [40,98,212,171]\nAction: click(point='<point>120 140</point>')",
+      "screenshot": "step_02.png",
+      "execution_error": null
+    },
+    {
+      "step": 3,
+      "action": "CLICK",
+      "params": {
+        "point": [
+          500,
+          547
+        ]
+      },
+      "raw_output": "Thought:\n- Progress: 已经进入酒店预订页面，发现目的地已经是丽江，日期也已经正确设置为6月28日到6月30日，只需要点击查询进入酒店列表，之后再按低价优先排序找最便宜的。\n- Next: 点击蓝色的“查询”按钮，获取丽江该日期的酒店列表，以便后续进行低价排序。\nTargetBox: [80,518,916,576]\nAction: click(point='<point>500 547</point>')",
+      "screenshot": "step_03.png",
+      "execution_error": null
+    },
+    {
+      "step": 4,
+      "action": "CLICK",
+      "params": {
+        "point": [
+          127,
+          112
+        ]
+      },
+      "raw_output": "Thought: - Progress: 现在已经获取了丽江该日期的酒店列表，当前排序是欢迎度排序，需要切换到低价优先排序，所以需要点击“欢迎度排序”按钮打开排序选择菜单。\n- Next: 点击左上角的“欢迎度排序”按钮，打开排序选项，选择低价优先来排序酒店。\nTargetBox: [28, 96, 233, 128</point>\nAction: click(point='<point>127 112</point>')",
+      "screenshot": "step_04.png",
+      "execution_error": null
+    },
+    {
+      "step": 5,
+      "action": "CLICK",
+      "params": {
+        "point": [
+          100,
+          268
+        ]
+      },
+      "raw_output": "Thought:\n- Progress: 已经打开了排序选择菜单，找到了“低价优先”选项，现在需要点击它来将酒店列表按照低价优先排序，这样就能找到最便宜的酒店。\n- Next: 点击排序菜单里的“低价优先”选项，让酒店列表按价格从低到高排序。\nAction: click(point='<point>100 268</point>')",
+      "screenshot": "step_05.png",
+      "execution_error": null
+    },
+    {
+      "step": 6,
+      "action": "WAIT",
+      "params": {
+        "seconds": 2
+      },
+      "raw_output": "Thought: - Progress: 已经点击了低价优先选项，现在酒店列表正在加载中，需要等待页面加载完成才能看到排序后的结果，找到最便宜的酒店。 - Next: 等待页面加载完成，显示按低价优先排序后的酒店列表。\nAction: wait(seconds='2')",
+      "screenshot": "step_06.png",
+      "execution_error": null
+    },
+    {
+      "step": 7,
+      "action": "CLICK",
+      "params": {
+        "point": [
+          598,
+          364
+        ]
+      },
+      "raw_output": "Thought:\n- Progress: 现在已经加载完成按低价优先排序的酒店列表，最便宜的是第一个“野火集·青年空间·欢乐旅行·悠闲Snowy青旅(束河古镇店)”，价格最低，需要点击进入这个酒店查看房型，找到单人女生床位房。\n- Next: 点击第一个酒店“野火集·青年空间·欢乐旅行·悠闲Snowy青旅(束河古镇店)”，进入酒店详情页查看房型。\nAction: click(point='<point>598 364</point>')",
+      "screenshot": "step_07.png",
+      "execution_error": null
+    },
+    {
+      "step": 8,
+      "action": "CLICK",
+      "params": {
+        "point": [
+          821,
+          940
+        ]
+      },
+      "raw_output": "Thought:\n- Progress: 现在已经进入最便宜酒店的详情页，看到了房型分类，需要找到单人女生床位房，先点击“查看房型”按钮打开完整房型列表，这样就能找到目标房型。\n- Next: 点击右下角蓝色的“查看房型”按钮，查看所有房型，找到单人女生床位房。\nAction: click(point='<point>821 940</point>')",
+      "screenshot": "step_08.png",
+      "execution_error": null
+    },
+    {
+      "step": 9,
+      "action": "CLICK",
+      "params": {
+        "point": [
+          843,
+          800
+        ]
+      },
+      "raw_output": "Thought: - Progress: 现在已经看到了房型列表，找到了女生六人间(床位)，这就是目标的单人女生床位房，需要点击对应的“订”按钮来进行预订。\n- Next: 点击女生六人间(床位)对应的蓝色“订”按钮，进入预订流程。\nAction: click(point='<point>843 800</point>')",
+      "screenshot": "step_09.png",
+      "execution_error": null
+    },
+    {
+      "step": 10,
+      "action": "COMPLETE",
+      "params": {},
+      "raw_output": "Thought:\n- Progress: 已经成功进入到女生六人间（单人床位）的预订确认页面，按照任务要求，付费任务到支付确认页就完成，不需要点击最终支付。\n- Next: 确认已经完成了预订流程的推进，到达支付确认页，任务完成。\nAction: complete(content='已在携程旅行找到丽江6月28日到6月30日低价优先排序里最便宜的酒店，并进入单人女生床位房的预订支付确认页面，任务完成')",
+      "screenshot": "step_10.png",
+      "execution_error": null
+    }
+  ],
+  "summary_visualization": "summary.png"
+}

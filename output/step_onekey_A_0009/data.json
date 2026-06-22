@@ -1,0 +1,144 @@
+{
+  "case_id": "step_onekey_A_0009",
+  "instruction": "在哔哩哔哩搜索Python入门教程并播放播放量最高的",
+  "max_steps": 30,
+  "device": {
+    "width": 1216,
+    "height": 2688
+  },
+  "execution": {
+    "total_steps": 11,
+    "exit_reason": "agent_completed",
+    "errors": []
+  },
+  "steps": [
+    {
+      "step": 1,
+      "action": "OPEN",
+      "params": {
+        "app_name": "哔哩哔哩"
+      },
+      "raw_output": "Action: open(app_name='哔哩哔哩')",
+      "screenshot": "step_01.png",
+      "execution_error": null
+    },
+    {
+      "step": 2,
+      "action": "CLICK",
+      "params": {
+        "point": [
+          838,
+          913
+        ]
+      },
+      "raw_output": "Thought:\n- Progress: 刚打开哔哩哔哩，现在遇到了开屏广告，需要等待广告结束或者点击跳过。目前广告还有倒计时，我可以等待，或者直接点击跳过按钮。现在看到右下角有跳过按钮，直接点击跳过进入主界面。\n- Next: 点击跳过广告按钮，进入哔哩哔哩主界面。\nAction: click(point='<point>838 913</point>')",
+      "screenshot": "step_02.png",
+      "execution_error": null
+    },
+    {
+      "step": 3,
+      "action": "BACK",
+      "params": {},
+      "raw_output": "Thought: - Progress: 现在进入到了视频播放页，还没开始搜索Python入门教程，需要先返回找到搜索框，应该先点击返回回到主界面，找到搜索入口。\n- Next: 点击返回，回到上一级界面，找到搜索框入口。\nAction: back()",
+      "screenshot": "step_03.png",
+      "execution_error": null
+    },
+    {
+      "step": 4,
+      "action": "CLICK",
+      "params": {
+        "point": [
+          421,
+          68
+        ]
+      },
+      "raw_output": "Thought: - Progress: 现在回到了哔哩哔哩主界面，已经看到顶部的搜索框，接下来需要点击搜索框来激活它，准备输入Python入门教程进行搜索。\n- Next: 点击顶部搜索框，激活输入状态以便输入搜索关键词。\nAction: click(point='<point>421 68</point>')",
+      "screenshot": "step_04.png",
+      "execution_error": null
+    },
+    {
+      "step": 5,
+      "action": "TYPE",
+      "params": {
+        "text": "Python入门教程"
+      },
+      "raw_output": "Thought: - Progress: 现在搜索框已经被激活，光标在搜索框里，接下来需要输入搜索关键词“Python入门教程”，然后进行搜索。\n- Next: 在搜索框中输入“Python入门教程”，准备进行搜索。\nAction: type(content='Python入门教程')",
+      "screenshot": "step_05.png",
+      "execution_error": null
+    },
+    {
+      "step": 6,
+      "action": "CLICK",
+      "params": {
+        "point": [
+          906,
+          73
+        ]
+      },
+      "raw_output": "Thought: - Progress: 已经在搜索框输入完成“Python入门教程”，现在需要点击搜索按钮进行搜索，才能进入结果页找到播放量最高的视频。\n- Next: 点击右上角粉色的“搜索”按钮，提交搜索进入结果页面。\nAction: click(point='<point>906 73</point>')",
+      "screenshot": "step_06.png",
+      "execution_error": null
+    },
+    {
+      "step": 7,
+      "action": "CLICK",
+      "params": {
+        "point": [
+          927,
+          123
+        ]
+      },
+      "raw_output": "Thought: - Progress: 现在已经进入搜索结果页，当前是综合排序，需要找到按播放量排序的筛选选项，我看到右上角有筛选按钮，点击它应该可以找到排序方式选择播放量最高。 - Next: 点击右上角的筛选按钮，打开排序和筛选选项，选择按播放量排序。 Action: click(point='<point>927 123</point>')",
+      "screenshot": "step_07.png",
+      "execution_error": null
+    },
+    {
+      "step": 8,
+      "action": "CLICK",
+      "params": {
+        "point": [
+          620,
+          242
+        ]
+      },
+      "raw_output": "Thought: - Progress: 现在筛选菜单已经打开，看到排序方式里有“播放多”选项，这就是按播放量从高到低排序，需要点击它来切换排序，让结果按播放量最高排序。\n- Next: 点击排序方式里的“播放多”选项，将搜索结果按播放量从高到低排序。\nTargetBox: [508, 225, 722, 259</point>\nAction: click(point='<point>620 242</point>')",
+      "screenshot": "step_08.png",
+      "execution_error": null
+    },
+    {
+      "step": 9,
+      "action": "CLICK",
+      "params": {
+        "point": [
+          488,
+          768
+        ]
+      },
+      "raw_output": "Thought:\n- Progress: 已经选中了按播放量最多排序，现在需要确认筛选，点击筛选菜单外的区域或者等待？不，应该点击下方的内容区域关闭筛选菜单，查看排序后的结果，找到第一个视频播放。\n- Next: 点击筛选菜单下方的视频区域，关闭筛选面板，查看按播放量排序后的结果。\nAction: click(point='<point>488 768</point>')",
+      "screenshot": "step_09.png",
+      "execution_error": null
+    },
+    {
+      "step": 10,
+      "action": "CLICK",
+      "params": {
+        "point": [
+          500,
+          271
+        ]
+      },
+      "raw_output": "Thought:\n- Progress: 现在已经按播放量排序完成，搜索结果里第一个视频就是播放量最高的（3534万播放），接下来需要点击这个第一个视频，进入播放页面。\n- Next: 点击第一个“花了2万多买的Python教程全套”视频，进入播放页开始播放。\nTargetBox: [26, 215, 968, 330</point>\nAction: click(point='<point>500 271</point>')",
+      "screenshot": "step_10.png",
+      "execution_error": null
+    },
+    {
+      "step": 11,
+      "action": "COMPLETE",
+      "params": {},
+      "raw_output": "Thought: - Progress: 现在已经成功进入播放量最高的Python入门教程视频的播放页面，视频已经开始播放，任务要求的搜索Python入门教程并播放播放量最高的已经完成。\n- Next: 任务目标已经达成，确认完成。\nAction: complete(content='已在哔哩哔哩搜索Python入门教程并播放了播放量最高的视频，任务完成')",
+      "screenshot": "step_11.png",
+      "execution_error": null
+    }
+  ],
+  "summary_visualization": "summary.png"
+}

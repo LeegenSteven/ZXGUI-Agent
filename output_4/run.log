@@ -1,0 +1,699 @@
+2026-06-14 09:08:34,789 - INFO - ============================================================
+2026-06-14 09:08:34,789 - INFO - 决赛 GUI Agent 批量跑测
+2026-06-14 09:08:34,789 - INFO - 启动时间: 2026-06-14T09:08:34.789798
+2026-06-14 09:08:34,789 - INFO - ============================================================
+2026-06-14 09:08:34,789 - INFO - 正在连接 ADB 设备...
+2026-06-14 09:08:34,991 - INFO - 已连接设备: FY2426910012
+2026-06-14 09:08:35,399 - INFO - 屏幕分辨率: 1216x2688
+2026-06-14 09:08:38,147 - INFO - ADB Keyboard 输入法已为当前输入法
+2026-06-14 09:08:38,147 - INFO - 设备已就绪: FY2426910012 (1216x2688)
+2026-06-14 09:08:38,147 - INFO - 正在加载 Agent...
+2026-06-14 09:08:38,150 - INFO - Agent state reset
+2026-06-14 09:08:38,150 - INFO - Agent 已加载
+2026-06-14 09:08:38,151 - INFO - 测试用例文件: tasks/tasks_4.json
+2026-06-14 09:08:38,151 - INFO - 输出目录: output_4
+2026-06-14 09:08:38,151 - INFO - 断点续跑: 否
+2026-06-14 09:08:38,151 - INFO - ------------------------------------------------------------
+2026-06-14 09:08:38,151 - INFO - ===== 开始执行用例: step_onekey_B_0001 =====
+2026-06-14 09:08:38,151 - INFO - 指令: 在携程旅行的酒店里预订6月28日到6月30日丽江低价优先里最便宜的酒店的单人女生床位房
+2026-06-14 09:08:38,151 - INFO - Agent state reset
+2026-06-14 09:08:40,924 - INFO - --- Step 1 ---
+2026-06-14 09:08:47,422 - INFO - [API调用] model=ep-20260415212058-bx48w, url=https://ark.cn-beijing.volces.com/api/v3
+2026-06-14 09:08:50,662 - INFO - HTTP Request: POST https://ark.cn-beijing.volces.com/api/v3/chat/completions "HTTP/1.1 200 OK"
+2026-06-14 09:08:50,668 - INFO - Model output: Thought:
+- Progress: 还未打开携程旅行App，这是任务第一步，需要先启动应用。
+- Next: 打开携程旅行应用，进入应用后再进行后续酒店预订操作。
+Action: open(app_name='携程旅行')
+2026-06-14 09:08:50,719 - INFO - Agent Output: action=OPEN, params={'app_name': '携程旅行'}
+2026-06-14 09:08:50,719 - INFO - Token usage: +2624 (input: 2570, output: 54), total: 2624/2560000
+2026-06-14 09:08:53,000 - INFO - --- Step 2 ---
+2026-06-14 09:08:59,651 - INFO - [API调用] model=ep-20260415212058-bx48w, url=https://ark.cn-beijing.volces.com/api/v3
+2026-06-14 09:09:04,731 - INFO - HTTP Request: POST https://ark.cn-beijing.volces.com/api/v3/chat/completions "HTTP/1.1 200 OK"
+2026-06-14 09:09:04,732 - INFO - Model output: Thought:
+- Progress: 打开携程旅行后出现了启动广告，需要等待广告跳过或者点击跳过。现在右上角有跳过广告按钮，等待倒计时结束或者直接点击跳过。
+- Next: 点击右上角的“跳过广告”按钮，进入携程旅行主界面。
+Action: click(point='<point>829 73</point>')
+2026-06-14 09:09:04,777 - INFO - Agent Output: action=CLICK, params={'point': [829, 73]}
+2026-06-14 09:09:04,777 - INFO - Token usage: +4043 (input: 3965, output: 78), total: 6667/2560000
+2026-06-14 09:09:07,269 - INFO - --- Step 3 ---
+2026-06-14 09:09:09,487 - INFO - [API调用] model=ep-20260415212058-bx48w, url=https://ark.cn-beijing.volces.com/api/v3
+2026-06-14 09:11:56,851 - INFO - ============================================================
+2026-06-14 09:11:56,851 - INFO - 决赛 GUI Agent 批量跑测
+2026-06-14 09:11:56,851 - INFO - 启动时间: 2026-06-14T09:11:56.851922
+2026-06-14 09:11:56,851 - INFO - ============================================================
+2026-06-14 09:11:56,852 - INFO - 正在连接 ADB 设备...
+2026-06-14 09:11:57,130 - INFO - 已连接设备: FY2426910012
+2026-06-14 09:11:57,598 - INFO - 屏幕分辨率: 1216x2688
+2026-06-14 09:11:58,673 - INFO - 已切换到 ADB Keyboard 输入法 (原: com.sohu.inputmethod.sogou.nubia/.SogouIME)
+2026-06-14 09:11:58,673 - INFO - 设备已就绪: FY2426910012 (1216x2688)
+2026-06-14 09:11:58,673 - INFO - 正在加载 Agent...
+2026-06-14 09:11:58,677 - INFO - Agent state reset
+2026-06-14 09:11:58,677 - INFO - Agent 已加载
+2026-06-14 09:11:58,678 - INFO - 测试用例文件: tasks/tasks_4.json
+2026-06-14 09:11:58,678 - INFO - 输出目录: output_4
+2026-06-14 09:11:58,678 - INFO - 断点续跑: 否
+2026-06-14 09:11:58,678 - INFO - ------------------------------------------------------------
+2026-06-14 09:11:58,678 - INFO - ===== 开始执行用例: step_onekey_B_0001 =====
+2026-06-14 09:11:58,679 - INFO - 指令: 在携程旅行的酒店里预订6月28日到6月30日丽江低价优先里最便宜的酒店的单人女生床位房
+2026-06-14 09:11:58,679 - INFO - Agent state reset
+2026-06-14 09:12:01,192 - INFO - --- Step 1 ---
+2026-06-14 09:12:06,181 - INFO - [API调用] model=ep-20260415212058-bx48w, url=https://ark.cn-beijing.volces.com/api/v3
+2026-06-14 09:12:09,123 - INFO - HTTP Request: POST https://ark.cn-beijing.volces.com/api/v3/chat/completions "HTTP/1.1 200 OK"
+2026-06-14 09:12:09,131 - INFO - Model output: Thought:
+- Progress: 任务第一步需要打开携程旅行App，当前桌面还未打开该应用。
+- Next: 找到并打开携程旅行App，开启后续预订流程。
+Action: open(app_name='携程旅行')
+2026-06-14 09:12:09,201 - INFO - Agent Output: action=OPEN, params={'app_name': '携程旅行'}
+2026-06-14 09:12:09,202 - INFO - Token usage: +2620 (input: 2570, output: 50), total: 2620/2560000
+2026-06-14 09:12:11,660 - INFO - --- Step 2 ---
+2026-06-14 09:12:19,582 - INFO - [API调用] model=ep-20260415212058-bx48w, url=https://ark.cn-beijing.volces.com/api/v3
+2026-06-14 09:12:24,573 - INFO - HTTP Request: POST https://ark.cn-beijing.volces.com/api/v3/chat/completions "HTTP/1.1 200 OK"
+2026-06-14 09:12:24,574 - INFO - Model output: Thought:
+- Progress: 打开携程旅行后出现了广告页面，现在需要等待广告跳过，或者直接点击跳过广告按钮进入主界面。
+- Next: 点击右上角的“跳过广告”按钮，进入携程旅行主界面。
+Action: click(point='<point>838 75</point>')
+2026-06-14 09:12:24,632 - INFO - Agent Output: action=CLICK, params={'point': [838, 75]}
+2026-06-14 09:12:24,632 - INFO - Token usage: +4028 (input: 3957, output: 71), total: 6648/2560000
+2026-06-14 09:12:27,868 - INFO - --- Step 3 ---
+2026-06-14 09:12:30,206 - INFO - [API调用] model=ep-20260415212058-bx48w, url=https://ark.cn-beijing.volces.com/api/v3
+2026-06-14 09:14:06,408 - INFO - ============================================================
+2026-06-14 09:14:06,408 - INFO - 决赛 GUI Agent 批量跑测
+2026-06-14 09:14:06,408 - INFO - 启动时间: 2026-06-14T09:14:06.408959
+2026-06-14 09:14:06,409 - INFO - ============================================================
+2026-06-14 09:14:06,409 - INFO - 正在连接 ADB 设备...
+2026-06-14 09:14:06,641 - INFO - 已连接设备: FY2426910012
+2026-06-14 09:14:07,071 - INFO - 屏幕分辨率: 1216x2688
+2026-06-14 09:14:07,491 - INFO - ADB Keyboard 输入法已为当前输入法
+2026-06-14 09:14:07,491 - INFO - 设备已就绪: FY2426910012 (1216x2688)
+2026-06-14 09:14:07,491 - INFO - 正在加载 Agent...
+2026-06-14 09:14:07,498 - INFO - Agent state reset
+2026-06-14 09:14:07,498 - INFO - Agent 已加载
+2026-06-14 09:14:07,499 - INFO - 测试用例文件: tasks/tasks_4.json
+2026-06-14 09:14:07,499 - INFO - 输出目录: output_4
+2026-06-14 09:14:07,499 - INFO - 断点续跑: 否
+2026-06-14 09:14:07,499 - INFO - ------------------------------------------------------------
+2026-06-14 09:14:07,500 - INFO - ===== 开始执行用例: step_onekey_B_0001 =====
+2026-06-14 09:14:07,500 - INFO - 指令: 在携程旅行的酒店里预订6月28日到6月30日丽江低价优先里最便宜的酒店的单人女生床位房
+2026-06-14 09:14:07,500 - INFO - Agent state reset
+2026-06-14 09:14:09,901 - INFO - --- Step 1 ---
+2026-06-14 09:14:14,283 - INFO - [API调用] model=ep-20260415212058-bx48w, url=https://ark.cn-beijing.volces.com/api/v3
+2026-06-14 09:14:17,443 - INFO - HTTP Request: POST https://ark.cn-beijing.volces.com/api/v3/chat/completions "HTTP/1.1 200 OK"
+2026-06-14 09:14:17,453 - INFO - Model output: Thought:
+- Progress: 还没打开携程旅行App，这是第一步，需要先启动应用。
+- Next: 打开携程旅行应用，进入App后才能开始预订酒店操作。
+Action: open(app_name='携程旅行')
+2026-06-14 09:14:17,550 - INFO - Agent Output: action=OPEN, params={'app_name': '携程旅行'}
+2026-06-14 09:14:17,550 - INFO - Token usage: +2622 (input: 2570, output: 52), total: 2622/2560000
+2026-06-14 09:14:19,881 - INFO - --- Step 2 ---
+2026-06-14 09:14:27,195 - INFO - [API调用] model=ep-20260415212058-bx48w, url=https://ark.cn-beijing.volces.com/api/v3
+2026-06-14 09:14:31,260 - INFO - HTTP Request: POST https://ark.cn-beijing.volces.com/api/v3/chat/completions "HTTP/1.1 200 OK"
+2026-06-14 09:14:31,261 - INFO - Model output: Thought: - Progress: 现在打开携程后出现了开屏广告，需要等待广告结束或者点击跳过。右上角有“跳过广告”按钮，点击它可以直接进入携程主界面。 - Next: 点击右上角的“跳过广告”按钮，跳过广告进入携程旅行App主界面。
+Action: click(point='<point>830 73</point>')
+2026-06-14 09:14:31,313 - INFO - Agent Output: action=CLICK, params={'point': [830, 73]}
+2026-06-14 09:14:31,313 - INFO - Token usage: +4043 (input: 3961, output: 82), total: 6665/2560000
+2026-06-14 09:14:33,823 - INFO - --- Step 3 ---
+2026-06-14 09:14:37,201 - INFO - [API调用] model=ep-20260415212058-bx48w, url=https://ark.cn-beijing.volces.com/api/v3
+2026-06-14 09:14:40,995 - INFO - HTTP Request: POST https://ark.cn-beijing.volces.com/api/v3/chat/completions "HTTP/1.1 200 OK"
+2026-06-14 09:14:40,995 - INFO - Model output: Thought:
+- Progress: 已经成功进入携程旅行主界面，现在需要进入酒店预订板块，找到丽江的酒店。
+- Next: 点击左上角的“酒店”按钮，进入酒店预订页面，开始后续操作。
+Action: click(point='<point>122 139</point>')
+2026-06-14 09:14:41,040 - INFO - Agent Output: action=CLICK, params={'point': [122, 139]}
+2026-06-14 09:14:41,040 - INFO - Token usage: +4143 (input: 4074, output: 69), total: 10808/2560000
+2026-06-14 09:14:42,835 - INFO - --- Step 4 ---
+2026-06-14 09:14:46,411 - INFO - [API调用] model=ep-20260415212058-bx48w, url=https://ark.cn-beijing.volces.com/api/v3
+2026-06-14 09:14:51,079 - INFO - HTTP Request: POST https://ark.cn-beijing.volces.com/api/v3/chat/completions "HTTP/1.1 200 OK"
+2026-06-14 09:14:51,080 - INFO - Model output: Thought:
+- Progress: 现在已经进入酒店预订页面，目的地已经是丽江，日期也已经是6月28日到6月30日，房间和人数也默认是1间房1成人，符合要求。
+- Next: 点击蓝色的“查询”按钮，进入酒店列表页面，之后再按低价优先排序找到最便宜的酒店。
+Action: click(point='<point>500 548</point>')
+2026-06-14 09:14:51,125 - INFO - Agent Output: action=CLICK, params={'point': [500, 548]}
+2026-06-14 09:14:51,125 - INFO - Token usage: +4224 (input: 4125, output: 99), total: 15032/2560000
+2026-06-14 09:14:53,181 - INFO - --- Step 5 ---
+2026-06-14 09:14:56,350 - INFO - [API调用] model=ep-20260415212058-bx48w, url=https://ark.cn-beijing.volces.com/api/v3
+2026-06-14 09:14:59,982 - INFO - HTTP Request: POST https://ark.cn-beijing.volces.com/api/v3/chat/completions "HTTP/1.1 200 OK"
+2026-06-14 09:14:59,982 - INFO - Model output: Thought:
+- Progress: 现在已经进入丽江酒店列表页面，当前排序是欢迎度排序，任务要求是低价优先排序，需要修改排序方式。
+- Next: 点击左上角的“欢迎度排序”下拉按钮，打开排序选项，选择低价优先排序。
+Action: click(point='<point>120 112</point>')
+2026-06-14 09:15:00,024 - INFO - Agent Output: action=CLICK, params={'point': [120, 112]}
+2026-06-14 09:15:00,024 - INFO - Token usage: +4330 (input: 4251, output: 79), total: 19362/2560000
+2026-06-14 09:15:01,736 - INFO - --- Step 6 ---
+2026-06-14 09:15:04,088 - INFO - [API调用] model=ep-20260415212058-bx48w, url=https://ark.cn-beijing.volces.com/api/v3
+2026-06-14 09:15:07,865 - INFO - HTTP Request: POST https://ark.cn-beijing.volces.com/api/v3/chat/completions "HTTP/1.1 200 OK"
+2026-06-14 09:15:07,866 - INFO - Model output: Thought:
+- Progress: 现在排序选项菜单已经打开，看到了“低价优先”选项，需要选择它来让酒店按照价格从低到高排序，这样才能找到最便宜的酒店。
+- Next: 点击“低价优先”选项，将酒店列表按照低价优先排序，之后找到最便宜的酒店再找单人女生床位房。
+Action: click(point='<point>102 266</point>')
+2026-06-14 09:15:07,959 - INFO - Agent Output: action=CLICK, params={'point': [102, 266]}
+2026-06-14 09:15:07,960 - INFO - Token usage: +4402 (input: 4307, output: 95), total: 23764/2560000
+2026-06-14 09:15:09,686 - INFO - --- Step 7 ---
+2026-06-14 09:15:13,135 - INFO - [API调用] model=ep-20260415212058-bx48w, url=https://ark.cn-beijing.volces.com/api/v3
+2026-06-14 09:15:18,304 - INFO - HTTP Request: POST https://ark.cn-beijing.volces.com/api/v3/chat/completions "HTTP/1.1 200 OK"
+2026-06-14 09:15:18,305 - INFO - Model output: Thought:
+- Progress: 已经成功将酒店按照低价优先排序，现在看到最便宜的酒店是第一个“野火集·青年空间·欢乐旅行·悠闲Snowy青旅(束河古镇店)”，价格4元起，是当前列表里最便宜的。
+- Next: 点击这个最便宜的酒店，进入酒店详情页面，找到单人女生床位房进行预订。
+TargetBox: [<point>0 253</point>,<point>999 518</point>]
+Action: click(point='<point>500 380</point>')
+2026-06-14 09:15:18,359 - INFO - Agent Output: action=CLICK, params={'point': [500, 380]}
+2026-06-14 09:15:18,359 - INFO - Token usage: +4545 (input: 4415, output: 130), total: 28309/2560000
+2026-06-14 09:15:20,166 - INFO - --- Step 8 ---
+2026-06-14 09:15:23,350 - INFO - [API调用] model=ep-20260415212058-bx48w, url=https://ark.cn-beijing.volces.com/api/v3
+2026-06-14 09:15:28,044 - INFO - HTTP Request: POST https://ark.cn-beijing.volces.com/api/v3/chat/completions "HTTP/1.1 200 OK"
+2026-06-14 09:15:28,046 - INFO - Model output: Thought:
+- Progress: 现在已经进入最便宜酒店的详情页，当前只显示了部分房型，需要点击查看所有房型，找到单人女生床位房。
+- Next: 点击右下角蓝色的“查看房型”按钮，进入房型选择页面，找到单人女生床位房。
+TargetBox: [670, 910, 970, 965]
+Action: click(point='<point>820 940</point>')
+2026-06-14 09:15:28,107 - INFO - Agent Output: action=CLICK, params={'point': [820, 940]}
+2026-06-14 09:15:28,107 - INFO - Token usage: +4651 (input: 4546, output: 105), total: 32960/2560000
+2026-06-14 09:15:29,961 - INFO - --- Step 9 ---
+2026-06-14 09:15:32,088 - INFO - [API调用] model=ep-20260415212058-bx48w, url=https://ark.cn-beijing.volces.com/api/v3
+2026-06-14 09:15:35,604 - INFO - HTTP Request: POST https://ark.cn-beijing.volces.com/api/v3/chat/completions "HTTP/1.1 200 OK"
+2026-06-14 09:15:35,605 - INFO - Model output: Thought:
+- Progress: 现在已经进入房型选择页面，看到这里有“女生六人间(床位)”，这就是单人女生床位房，符合任务要求。
+- Next: 点击女生六人间(床位)右侧的“订”按钮，开始预订这个房间。
+TargetBox: [730, 775, 950, 820]
+Action: click(point='<point>838 800</point>')
+2026-06-14 09:15:35,656 - INFO - Agent Output: action=CLICK, params={'point': [838, 800]}
+2026-06-14 09:15:35,656 - INFO - Token usage: +4704 (input: 4600, output: 104), total: 37664/2560000
+2026-06-14 09:15:37,271 - INFO - --- Step 10 ---
+2026-06-14 09:15:39,265 - INFO - [API调用] model=ep-20260415212058-bx48w, url=https://ark.cn-beijing.volces.com/api/v3
+2026-06-14 09:15:43,232 - INFO - HTTP Request: POST https://ark.cn-beijing.volces.com/api/v3/chat/completions "HTTP/1.1 200 OK"
+2026-06-14 09:15:43,234 - INFO - Model output: Thought: 已经完成了所有筛选步骤：找到低价优先里最便宜的酒店，选中了单人女生床位房，现在已经进入了预订填写信息后的支付页面，根据规则，不需要进行实际支付，任务已经完成。
+Action: complete(content='已完成在携程旅行找到6月28日到6月30日丽江低价优先里最便宜的酒店，并选择了单人女生床位房进入支付页面，任务完成。')
+2026-06-14 09:15:43,290 - INFO - Agent Output: action=COMPLETE, params={}
+2026-06-14 09:15:43,291 - INFO - Token usage: +4773 (input: 4680, output: 93), total: 42437/2560000
+2026-06-14 09:15:43,428 - INFO - Agent 返回 COMPLETE，任务完成
+2026-06-14 09:15:43,429 - INFO - 用例 step_onekey_B_0001 执行结束: exit_reason=agent_completed, steps=10
+2026-06-14 09:15:43,429 - INFO - data.json 已保存: output_4/step_onekey_B_0001/data.json
+2026-06-14 09:15:51,839 - INFO - 汇总图已保存: output_4/step_onekey_B_0001/summary.png
+2026-06-14 09:15:51,839 - INFO - summary.png 已生成: output_4/step_onekey_B_0001/summary.png
+2026-06-14 09:15:51,839 - INFO - 进度已保存: output_4/run_metadata.json
+2026-06-14 09:15:51,839 - INFO - ==================================================
+2026-06-14 09:15:51,840 - INFO - 全部用例执行完毕: 1/1 完成, 0 失败
+2026-06-14 09:15:51,840 - INFO - ==================================================
+2026-06-14 09:15:51,840 - INFO - ============================================================
+2026-06-14 09:15:51,840 - INFO - 跑测完成!
+2026-06-14 09:15:51,840 - INFO - 总用例数: 1
+2026-06-14 09:15:51,840 - INFO - 完成: 1
+2026-06-14 09:15:51,840 - INFO - 失败: 0
+2026-06-14 09:15:51,840 - INFO - 总耗时: 104.3s
+2026-06-14 09:15:51,840 - INFO - 结果目录: /Work/ljc/juesai/code_student/output_4
+2026-06-14 09:15:51,840 - INFO - ============================================================
+2026-06-14 09:15:51,840 - INFO - 
+下一步: python generate_html.py  # 生成打分页面
+2026-06-14 09:20:05,462 - INFO - ============================================================
+2026-06-14 09:20:05,462 - INFO - 决赛 GUI Agent 批量跑测
+2026-06-14 09:20:05,462 - INFO - 启动时间: 2026-06-14T09:20:05.462908
+2026-06-14 09:20:05,462 - INFO - ============================================================
+2026-06-14 09:20:05,462 - INFO - 正在连接 ADB 设备...
+2026-06-14 09:20:05,673 - INFO - 已连接设备: FY2426910012
+2026-06-14 09:20:06,101 - INFO - 屏幕分辨率: 1216x2688
+2026-06-14 09:20:06,596 - INFO - ADB Keyboard 输入法已为当前输入法
+2026-06-14 09:20:06,596 - INFO - 设备已就绪: FY2426910012 (1216x2688)
+2026-06-14 09:20:06,596 - INFO - 正在加载 Agent...
+2026-06-14 09:20:06,600 - INFO - Agent state reset
+2026-06-14 09:20:06,600 - INFO - Agent 已加载
+2026-06-14 09:20:06,600 - INFO - 测试用例文件: tasks/tasks_4.json
+2026-06-14 09:20:06,600 - INFO - 输出目录: output_4
+2026-06-14 09:20:06,600 - INFO - 断点续跑: 否
+2026-06-14 09:20:06,600 - INFO - ------------------------------------------------------------
+2026-06-14 09:20:06,600 - INFO - ===== 开始执行用例: step_onekey_B_0001 =====
+2026-06-14 09:20:06,601 - INFO - 指令: 在携程旅行的酒店里预订6月28日到6月30日丽江低价优先里最便宜的酒店的单人女生床位房
+2026-06-14 09:20:06,601 - INFO - Agent state reset
+2026-06-14 09:20:09,138 - INFO - --- Step 1 ---
+2026-06-14 09:20:13,500 - INFO - [API调用] model=ep-20260415212058-bx48w, url=https://ark.cn-beijing.volces.com/api/v3
+2026-06-14 09:20:15,859 - INFO - HTTP Request: POST https://ark.cn-beijing.volces.com/api/v3/chat/completions "HTTP/1.1 200 OK"
+2026-06-14 09:20:15,865 - INFO - Model output: Thought:
+- Progress: 还没有打开携程旅行App，第一步需要启动应用。
+- Next: 打开携程旅行应用，进入应用后才能进行后续的酒店预订操作。
+Action: open(app_name='携程旅行')
+2026-06-14 09:20:15,907 - INFO - Agent Output: action=OPEN, params={'app_name': '携程旅行'}
+2026-06-14 09:20:15,907 - INFO - Token usage: +2620 (input: 2570, output: 50), total: 2620/2560000
+2026-06-14 09:20:18,259 - INFO - --- Step 2 ---
+2026-06-14 09:20:21,964 - INFO - [API调用] model=ep-20260415212058-bx48w, url=https://ark.cn-beijing.volces.com/api/v3
+2026-06-14 09:20:26,622 - INFO - HTTP Request: POST https://ark.cn-beijing.volces.com/api/v3/chat/completions "HTTP/1.1 200 OK"
+2026-06-14 09:20:26,623 - INFO - Model output: Thought: - Progress: 已经成功打开携程旅行App，现在需要进入酒店预订模块，下一步点击酒店入口。
+- Next: 点击左上角的“酒店”按钮，进入酒店预订页面，以便后续设置目的地和日期。
+Action: click(point='<point>120 139</point>')
+2026-06-14 09:20:26,666 - INFO - Agent Output: action=CLICK, params={'point': [120, 139]}
+2026-06-14 09:20:26,666 - INFO - Token usage: +4027 (input: 3957, output: 70), total: 6647/2560000
+2026-06-14 09:20:28,596 - INFO - --- Step 3 ---
+2026-06-14 09:20:32,178 - INFO - [API调用] model=ep-20260415212058-bx48w, url=https://ark.cn-beijing.volces.com/api/v3
+2026-06-14 09:20:36,398 - INFO - HTTP Request: POST https://ark.cn-beijing.volces.com/api/v3/chat/completions "HTTP/1.1 200 OK"
+2026-06-14 09:20:36,399 - INFO - Model output: Thought: - Progress: 已经进入酒店预订页面，目的地已经是丽江，入住离店日期也已经设置为6月28日到6月30日，接下来只需要点击查询进行搜索，之后再按低价优先排序筛选最便宜的酒店和单人女生床位房。
+- Next: 点击蓝色的“查询”按钮，搜索符合目的地和日期条件的酒店，进入结果页后进行排序和筛选。
+Action: click(point='<point>500 547</point>')
+2026-06-14 09:20:36,439 - INFO - Agent Output: action=CLICK, params={'point': [500, 547]}
+2026-06-14 09:20:36,439 - INFO - Token usage: +4158 (input: 4046, output: 112), total: 10805/2560000
+2026-06-14 09:20:38,338 - INFO - --- Step 4 ---
+2026-06-14 09:20:41,303 - INFO - [API调用] model=ep-20260415212058-bx48w, url=https://ark.cn-beijing.volces.com/api/v3
+2026-06-14 09:20:46,692 - INFO - HTTP Request: POST https://ark.cn-beijing.volces.com/api/v3/chat/completions "HTTP/1.1 200 OK"
+2026-06-14 09:20:46,693 - INFO - Model output: Thought:
+- Progress: 已经搜索出丽江6月28日到6月30日的酒店，现在需要将排序方式改为低价优先，当前是欢迎度排序，所以先点击排序按钮切换排序方式。
+- Next: 点击左上角的“欢迎度排序”按钮，打开排序选项，选择低价优先排序。
+TargetBox: [50, 92, 236, 127</point>
+Action: click(point='<point>125 110</point>')
+2026-06-14 09:20:46,733 - INFO - Agent Output: action=CLICK, params={'point': [125, 110]}
+2026-06-14 09:20:46,734 - INFO - Token usage: +4315 (input: 4198, output: 117), total: 15120/2560000
+2026-06-14 09:20:48,406 - INFO - --- Step 5 ---
+2026-06-14 09:20:50,438 - INFO - [API调用] model=ep-20260415212058-bx48w, url=https://ark.cn-beijing.volces.com/api/v3
+2026-06-14 09:20:53,316 - INFO - HTTP Request: POST https://ark.cn-beijing.volces.com/api/v3/chat/completions "HTTP/1.1 200 OK"
+2026-06-14 09:20:53,316 - INFO - Model output: Thought: - Progress: 排序选项弹窗已经打开，现在看到“低价优先”选项，需要点击它来切换排序方式，这样就能得到按价格从低到高排序的酒店列表。
+- Next: 点击“低价优先”选项，将酒店按低价优先排序，以便找到最便宜的酒店。
+Action: click(point='<point>100 268</point>')
+2026-06-14 09:20:53,356 - INFO - Agent Output: action=CLICK, params={'point': [100, 268]}
+2026-06-14 09:20:53,356 - INFO - Token usage: +4378 (input: 4291, output: 87), total: 19498/2560000
+2026-06-14 09:20:54,976 - INFO - --- Step 6 ---
+2026-06-14 09:20:56,843 - INFO - [API调用] model=ep-20260415212058-bx48w, url=https://ark.cn-beijing.volces.com/api/v3
+2026-06-14 09:21:00,195 - INFO - HTTP Request: POST https://ark.cn-beijing.volces.com/api/v3/chat/completions "HTTP/1.1 200 OK"
+2026-06-14 09:21:00,196 - INFO - Model output: Thought: - Progress: 已经选择了低价优先排序，现在页面正在加载排序后的酒店列表，需要等待页面加载完成才能继续操作。 - Next: 等待页面加载完成，查看排序后的酒店列表，找到最便宜的酒店。 Action: wait(seconds='2')
+2026-06-14 09:21:00,235 - INFO - Agent Output: action=WAIT, params={'seconds': 2}
+2026-06-14 09:21:00,235 - INFO - Token usage: +4407 (input: 4348, output: 59), total: 23905/2560000
+2026-06-14 09:21:03,327 - INFO - --- Step 7 ---
+2026-06-14 09:21:06,638 - INFO - [API调用] model=ep-20260415212058-bx48w, url=https://ark.cn-beijing.volces.com/api/v3
+2026-06-14 09:21:10,606 - INFO - HTTP Request: POST https://ark.cn-beijing.volces.com/api/v3/chat/completions "HTTP/1.1 200 OK"
+2026-06-14 09:21:10,607 - INFO - Model output: Thought:
+- Progress: 页面已经加载完成，低价优先排序后第一个酒店就是最便宜的，现在需要进入这个酒店详情页，找到单人女生床位房。
+- Next: 点击第一个酒店“野火集·青年空间·欢乐旅行·悠闲Snowy青旅(束河古镇店)”，进入详情页后查找房型。
+Action: click(point='<point>500 385</point>')
+2026-06-14 09:21:10,648 - INFO - Agent Output: action=CLICK, params={'point': [500, 385]}
+2026-06-14 09:21:10,648 - INFO - Token usage: +4486 (input: 4393, output: 93), total: 28391/2560000
+2026-06-14 09:21:12,376 - INFO - --- Step 8 ---
+2026-06-14 09:21:15,973 - INFO - [API调用] model=ep-20260415212058-bx48w, url=https://ark.cn-beijing.volces.com/api/v3
+2026-06-14 09:21:20,046 - INFO - HTTP Request: POST https://ark.cn-beijing.volces.com/api/v3/chat/completions "HTTP/1.1 200 OK"
+2026-06-14 09:21:20,047 - INFO - Model output: Thought: - Progress: 已经进入最便宜酒店的详情页，现在需要查看房型，找到单人女生床位房，点击“查看房型”按钮可以进入房型列表页面。
+- Next: 点击右下角蓝色的“查看房型”按钮，进入房型页面查找单人女生床位房。
+Action: click(point='<point>821 940</point>')
+2026-06-14 09:21:20,096 - INFO - Agent Output: action=CLICK, params={'point': [821, 940]}
+2026-06-14 09:21:20,096 - INFO - Token usage: +4595 (input: 4514, output: 81), total: 32986/2560000
+2026-06-14 09:21:21,993 - INFO - --- Step 9 ---
+2026-06-14 09:21:24,489 - INFO - [API调用] model=ep-20260415212058-bx48w, url=https://ark.cn-beijing.volces.com/api/v3
+2026-06-14 09:21:27,973 - INFO - HTTP Request: POST https://ark.cn-beijing.volces.com/api/v3/chat/completions "HTTP/1.1 200 OK"
+2026-06-14 09:21:27,974 - INFO - Model output: Thought: - Progress: 已经进入房型页面，找到了女生六人间（床位），这就是单人女生床位房，现在需要点击这个房型对应的“订”按钮来进行预订。 - Next: 点击女生六人间(床位)对应的蓝色“订”按钮，进入预订流程。
+Action: click(point='<point>840 800</point>')
+2026-06-14 09:21:28,014 - INFO - Agent Output: action=CLICK, params={'point': [840, 800]}
+2026-06-14 09:21:28,014 - INFO - Token usage: +4664 (input: 4582, output: 82), total: 37650/2560000
+2026-06-14 09:21:29,667 - INFO - --- Step 10 ---
+2026-06-14 09:21:31,553 - INFO - [API调用] model=ep-20260415212058-bx48w, url=https://ark.cn-beijing.volces.com/api/v3
+2026-06-14 09:21:36,943 - INFO - HTTP Request: POST https://ark.cn-beijing.volces.com/api/v3/chat/completions "HTTP/1.1 200 OK"
+2026-06-14 09:21:36,944 - INFO - Model output: Thought: - Progress: 已经进入预订确认页面，信息都已填写，当前到达了支付环节，按照要求不需要点击立即支付，任务已经完成了预订流程的推进，找到了目标房型并进入到支付页面。
+- Next: 任务已经推进到支付确认页，无需进行支付操作，任务完成。
+Action: complete(content='已在携程旅行找到丽江6月28日到6月30日低价优先排序下最便宜酒店的单人女生床位房，并进入预订支付页面，任务完成')
+2026-06-14 09:21:36,984 - INFO - Agent Output: action=COMPLETE, params={}
+2026-06-14 09:21:36,984 - INFO - Token usage: +4781 (input: 4669, output: 112), total: 42431/2560000
+2026-06-14 09:21:37,092 - INFO - Agent 返回 COMPLETE，任务完成
+2026-06-14 09:21:37,092 - INFO - 用例 step_onekey_B_0001 执行结束: exit_reason=agent_completed, steps=10
+2026-06-14 09:21:37,093 - INFO - data.json 已保存: output_4/step_onekey_B_0001/data.json
+2026-06-14 09:21:43,962 - INFO - 汇总图已保存: output_4/step_onekey_B_0001/summary.png
+2026-06-14 09:21:43,962 - INFO - summary.png 已生成: output_4/step_onekey_B_0001/summary.png
+2026-06-14 09:21:43,963 - INFO - 进度已保存: output_4/run_metadata.json
+2026-06-14 09:21:43,963 - INFO - ==================================================
+2026-06-14 09:21:43,963 - INFO - 全部用例执行完毕: 1/1 完成, 0 失败
+2026-06-14 09:21:43,963 - INFO - ==================================================
+2026-06-14 09:21:43,963 - INFO - ============================================================
+2026-06-14 09:21:43,963 - INFO - 跑测完成!
+2026-06-14 09:21:43,963 - INFO - 总用例数: 1
+2026-06-14 09:21:43,963 - INFO - 完成: 1
+2026-06-14 09:21:43,963 - INFO - 失败: 0
+2026-06-14 09:21:43,963 - INFO - 总耗时: 97.4s
+2026-06-14 09:21:43,963 - INFO - 结果目录: /Work/ljc/juesai/code_student/output_4
+2026-06-14 09:21:43,963 - INFO - ============================================================
+2026-06-14 09:21:43,963 - INFO - 
+下一步: python generate_html.py  # 生成打分页面
+2026-06-14 14:22:49,690 - INFO - ============================================================
+2026-06-14 14:22:49,690 - INFO - 决赛 GUI Agent 批量跑测
+2026-06-14 14:22:49,690 - INFO - 启动时间: 2026-06-14T14:22:49.690539
+2026-06-14 14:22:49,690 - INFO - ============================================================
+2026-06-14 14:22:49,690 - INFO - 正在连接 ADB 设备...
+2026-06-14 14:22:49,926 - INFO - 已连接设备: FY2426910012
+2026-06-14 14:22:50,372 - INFO - 屏幕分辨率: 1216x2688
+2026-06-14 14:22:50,812 - INFO - ADB Keyboard 输入法已为当前输入法
+2026-06-14 14:22:50,812 - INFO - 设备已就绪: FY2426910012 (1216x2688)
+2026-06-14 14:22:50,812 - INFO - 正在加载 Agent...
+2026-06-14 14:22:50,815 - INFO - DeviceController.input_text patched (ADB Keyboard for all text)
+2026-06-14 14:22:50,815 - INFO - Agent state reset
+2026-06-14 14:22:50,816 - INFO - Agent 已加载
+2026-06-14 14:22:50,816 - INFO - 测试用例文件: tasks/tasks_4.json
+2026-06-14 14:22:50,816 - INFO - 输出目录: output_4
+2026-06-14 14:22:50,816 - INFO - 断点续跑: 否
+2026-06-14 14:22:50,816 - INFO - ------------------------------------------------------------
+2026-06-14 14:22:50,816 - INFO - ===== 开始执行用例: step_onekey_B_0001 =====
+2026-06-14 14:22:50,816 - INFO - 指令: 在携程旅行的酒店里预订6月28日到6月30日丽江低价优先里最便宜的酒店的单人女生床位房
+2026-06-14 14:22:50,816 - INFO - Agent state reset
+2026-06-14 14:22:53,232 - INFO - --- Step 1 ---
+2026-06-14 14:22:57,564 - INFO - [API调用] model=ep-20260415212058-bx48w, url=https://ark.cn-beijing.volces.com/api/v3
+2026-06-14 14:23:01,005 - INFO - HTTP Request: POST https://ark.cn-beijing.volces.com/api/v3/chat/completions "HTTP/1.1 200 OK"
+2026-06-14 14:23:01,010 - INFO - Model output: Thought:
+- Progress: 还没打开携程旅行应用，这是任务第一步，需要先启动App。
+- Next: 打开携程旅行App，进入应用开始后续操作。
+Action: open(app_name='携程旅行')
+2026-06-14 14:23:01,051 - INFO - Agent Output: action=OPEN, params={'app_name': '携程旅行'}
+2026-06-14 14:23:01,051 - INFO - Token usage: +2762 (input: 2712, output: 50), total: 2762/2560000
+2026-06-14 14:23:03,177 - INFO - --- Step 2 ---
+2026-06-14 14:23:07,292 - INFO - [API调用] model=ep-20260415212058-bx48w, url=https://ark.cn-beijing.volces.com/api/v3
+2026-06-14 14:23:10,967 - INFO - HTTP Request: POST https://ark.cn-beijing.volces.com/api/v3/chat/completions "HTTP/1.1 200 OK"
+2026-06-14 14:23:10,968 - INFO - Model output: Thought:
+- Progress: 已经成功打开携程旅行App，现在在首页，需要进入酒店预订板块开始操作。
+- Next: 点击左上角的“酒店”按钮，进入酒店预订页面。
+Action: click(point='<point>122 139</point>')
+2026-06-14 14:23:11,011 - INFO - Agent Output: action=CLICK, params={'point': [122, 139]}
+2026-06-14 14:23:11,011 - INFO - Token usage: +4163 (input: 4099, output: 64), total: 6925/2560000
+2026-06-14 14:23:13,052 - INFO - --- Step 3 ---
+2026-06-14 14:23:16,197 - INFO - [API调用] model=ep-20260415212058-bx48w, url=https://ark.cn-beijing.volces.com/api/v3
+2026-06-14 14:23:20,344 - INFO - HTTP Request: POST https://ark.cn-beijing.volces.com/api/v3/chat/completions "HTTP/1.1 200 OK"
+2026-06-14 14:23:20,345 - INFO - Model output: Thought: - Progress: 现在已经在酒店预订页面，目的地已经是丽江，日期也已经是6月28日到6月30日，信息正确，接下来需要查询酒店，之后进行低价排序。
+- Next: 点击蓝色的“查询”按钮，获取丽江符合日期的酒店列表。
+Action: click(point='<point>500 544</point>')
+2026-06-14 14:23:20,383 - INFO - Agent Output: action=CLICK, params={'point': [500, 544]}
+2026-06-14 14:23:20,383 - INFO - Token usage: +5611 (input: 5523, output: 88), total: 12536/2560000
+2026-06-14 14:23:22,162 - INFO - --- Step 4 ---
+2026-06-14 14:23:24,391 - INFO - [API调用] model=ep-20260415212058-bx48w, url=https://ark.cn-beijing.volces.com/api/v3
+2026-06-14 14:23:28,488 - INFO - HTTP Request: POST https://ark.cn-beijing.volces.com/api/v3/chat/completions "HTTP/1.1 200 OK"
+2026-06-14 14:23:28,489 - INFO - Model output: Thought: - Progress: 点击查询后弹出了一个优惠弹窗，挡住了酒店列表页面，需要先关闭这个弹窗才能继续操作。 - Next: 点击弹窗左上角的关闭叉号，关闭这个优惠弹窗，继续查看酒店列表。 Action: click(point='<point>66 442</point>')
+2026-06-14 14:23:28,527 - INFO - Agent Output: action=CLICK, params={'point': [66, 442]}
+2026-06-14 14:23:28,527 - INFO - Token usage: +5718 (input: 5648, output: 70), total: 18254/2560000
+2026-06-14 14:23:30,237 - INFO - --- Step 5 ---
+2026-06-14 14:23:33,856 - INFO - [API调用] model=ep-20260415212058-bx48w, url=https://ark.cn-beijing.volces.com/api/v3
+2026-06-14 14:23:37,712 - INFO - HTTP Request: POST https://ark.cn-beijing.volces.com/api/v3/chat/completions "HTTP/1.1 200 OK"
+2026-06-14 14:23:37,713 - INFO - Model output: Thought:
+- Progress: 已经关闭了优惠弹窗，现在回到酒店预订页面，目的地、日期都已经正确设置好了，接下来需要重新点击查询按钮获取酒店列表。
+- Next: 点击蓝色的“查询”按钮，获取丽江符合日期条件的酒店列表。
+Action: click(point='<point>500 548</point>')
+2026-06-14 14:23:37,755 - INFO - Agent Output: action=CLICK, params={'point': [500, 548]}
+2026-06-14 14:23:37,755 - INFO - Token usage: +5825 (input: 5745, output: 80), total: 24079/2560000
+2026-06-14 14:23:39,572 - INFO - --- Step 6 ---
+2026-06-14 14:23:42,430 - INFO - [API调用] model=ep-20260415212058-bx48w, url=https://ark.cn-beijing.volces.com/api/v3
+2026-06-14 14:23:47,765 - INFO - HTTP Request: POST https://ark.cn-beijing.volces.com/api/v3/chat/completions "HTTP/1.1 200 OK"
+2026-06-14 14:23:47,766 - INFO - Model output: Thought:
+- Progress: 已经成功获取到丽江6月28日到30日的酒店列表，现在需要将酒店按低价优先排序，找到最便宜的酒店，所以先点击排序按钮“欢迎度排序”切换排序方式。
+- Next: 点击左上角的“欢迎度排序”按钮，打开排序选项，选择低价优先排序。
+Action: click(point='<point>120 109</point>')
+2026-06-14 14:23:47,806 - INFO - Agent Output: action=CLICK, params={'point': [120, 109]}
+2026-06-14 14:23:47,806 - INFO - Token usage: +5910 (input: 5813, output: 97), total: 29989/2560000
+2026-06-14 14:23:49,682 - INFO - --- Step 7 ---
+2026-06-14 14:23:52,266 - INFO - [API调用] model=ep-20260415212058-bx48w, url=https://ark.cn-beijing.volces.com/api/v3
+2026-06-14 14:23:56,734 - INFO - HTTP Request: POST https://ark.cn-beijing.volces.com/api/v3/chat/completions "HTTP/1.1 200 OK"
+2026-06-14 14:23:56,735 - INFO - Model output: Thought:
+- Progress: 排序选项已经打开，现在看到了“低价优先”选项，点击它就能将酒店按价格从低到高排序，找到最便宜的酒店。
+- Next: 点击排序菜单中的“低价优先”选项，让酒店按低价排序，方便找到最便宜的酒店。
+Action: click(point='<point>250 266</point>')
+2026-06-14 14:23:56,772 - INFO - Agent Output: action=CLICK, params={'point': [250, 266]}
+2026-06-14 14:23:56,773 - INFO - Token usage: +6017 (input: 5931, output: 86), total: 36006/2560000
+2026-06-14 14:23:58,442 - INFO - --- Step 8 ---
+2026-06-14 14:24:00,055 - INFO - [API调用] model=ep-20260415212058-bx48w, url=https://ark.cn-beijing.volces.com/api/v3
+2026-06-14 14:24:04,236 - INFO - HTTP Request: POST https://ark.cn-beijing.volces.com/api/v3/chat/completions "HTTP/1.1 200 OK"
+2026-06-14 14:24:04,237 - INFO - Model output: Thought: - Progress: 点击了低价优先选项后，页面正在加载排序后的酒店列表，现在还没有显示出具体内容，需要等待页面加载完成才能继续操作。 - Next: 等待页面加载完成，让排序后的酒店列表显示出来，以便找到最便宜的酒店。
+Action: wait(seconds='2')
+2026-06-14 14:24:04,275 - INFO - Agent Output: action=WAIT, params={'seconds': 2}
+2026-06-14 14:24:04,275 - INFO - Token usage: +6090 (input: 6020, output: 70), total: 42096/2560000
+2026-06-14 14:24:07,360 - INFO - --- Step 9 ---
+2026-06-14 14:24:11,555 - INFO - [API调用] model=ep-20260415212058-bx48w, url=https://ark.cn-beijing.volces.com/api/v3
+2026-06-14 14:24:17,106 - INFO - HTTP Request: POST https://ark.cn-beijing.volces.com/api/v3/chat/completions "HTTP/1.1 200 OK"
+2026-06-14 14:24:17,107 - INFO - Model output: Thought: - Progress: 已经成功加载出按低价优先排序的酒店列表，最便宜的是排在第一个的“野火集·青年空间·欢乐旅行·悠闲Snowy青旅(束河古镇店)”，价格最低，现在需要点击进入这个酒店详情页，查找单人女生床位房。 - Next: 点击第一个酒店“野火集·青年空间·欢乐旅行·悠闲Snowy青旅(束河古镇店)”，进入详情页面查看房间信息。 TargetBox: [10, 256, 980, 526] Action: click(point='<point>500 386</point>')
+2026-06-14 14:24:17,146 - INFO - Agent Output: action=CLICK, params={'point': [500, 386]}
+2026-06-14 14:24:17,146 - INFO - Token usage: +6209 (input: 6068, output: 141), total: 48305/2560000
+2026-06-14 14:24:18,867 - INFO - --- Step 10 ---
+2026-06-14 14:24:21,961 - INFO - [API调用] model=ep-20260415212058-bx48w, url=https://ark.cn-beijing.volces.com/api/v3
+2026-06-14 14:24:27,927 - INFO - HTTP Request: POST https://ark.cn-beijing.volces.com/api/v3/chat/completions "HTTP/1.1 200 OK"
+2026-06-14 14:24:27,927 - INFO - Model output: Thought: - Progress: 已经进入了最便宜酒店的详情页，现在看到日期已经是6月28日到6月30日，需要找到单人女生床位房，先点击“床位房”标签筛选出所有床位房，再找女生床位。 - Next: 点击页面里的“床位房”标签，筛选出床位房型，方便找到女生单人床位房。
+Action: click(point='<point>98 750</point>')
+2026-06-14 14:24:27,965 - INFO - Agent Output: action=CLICK, params={'point': [98, 750]}
+2026-06-14 14:24:27,965 - INFO - Token usage: +6348 (input: 6246, output: 102), total: 54653/2560000
+2026-06-14 14:24:29,802 - INFO - --- Step 11 ---
+2026-06-14 14:24:31,550 - INFO - [API调用] model=ep-20260415212058-bx48w, url=https://ark.cn-beijing.volces.com/api/v3
+2026-06-14 14:24:35,076 - INFO - HTTP Request: POST https://ark.cn-beijing.volces.com/api/v3/chat/completions "HTTP/1.1 200 OK"
+2026-06-14 14:24:35,076 - INFO - Model output: Thought: - Progress: 已经点击了床位房标签，现在页面正在加载查询房间价格，还没有显示出具体的房型信息，需要等待加载完成才能找到单人女生床位房。 - Next: 等待页面加载完成，让床位房型信息显示出来，以便继续查找目标房型。
+Action: wait(seconds='2')
+2026-06-14 14:24:35,115 - INFO - Agent Output: action=WAIT, params={'seconds': 2}
+2026-06-14 14:24:35,115 - INFO - Token usage: +6448 (input: 6376, output: 72), total: 61101/2560000
+2026-06-14 14:24:38,194 - INFO - --- Step 12 ---
+2026-06-14 14:24:40,087 - INFO - [API调用] model=ep-20260415212058-bx48w, url=https://ark.cn-beijing.volces.com/api/v3
+2026-06-14 14:24:44,812 - INFO - HTTP Request: POST https://ark.cn-beijing.volces.com/api/v3/chat/completions "HTTP/1.1 200 OK"
+2026-06-14 14:24:44,812 - INFO - Model output: Thought: - Progress: 已经加载出床位房列表，现在只看到男生四人间，还没找到单人女生床位房，需要向下滑动页面查看更多房型。
+- Next: 向下滑动页面，浏览更多床位房型，找到单人女生床位房。
+Action: scroll(start_point='<point>500 800</point>', end_point='<point>500 300</point>')
+2026-06-14 14:24:44,852 - INFO - Agent Output: action=SCROLL, params={'start_point': [500, 800], 'end_point': [500, 300]}
+2026-06-14 14:24:44,852 - INFO - Token usage: +6453 (input: 6360, output: 93), total: 67554/2560000
+2026-06-14 14:24:46,724 - INFO - --- Step 13 ---
+2026-06-14 14:24:49,511 - INFO - [API调用] model=ep-20260415212058-bx48w, url=https://ark.cn-beijing.volces.com/api/v3
+2026-06-14 14:24:53,455 - INFO - HTTP Request: POST https://ark.cn-beijing.volces.com/api/v3/chat/completions "HTTP/1.1 200 OK"
+2026-06-14 14:24:53,456 - INFO - Model output: Thought: - Progress: 刚才滑动错误进入了点评标签页，现在需要回到房型标签页查看房型，找到单人女生床位房。 - Next: 点击顶部导航栏的“房型”标签，回到房型列表页面继续查找目标房型。 Action: click(point='<point>116 115</point>')
+2026-06-14 14:24:53,495 - INFO - Agent Output: action=CLICK, params={'point': [116, 115]}
+2026-06-14 14:24:53,495 - INFO - Token usage: +6478 (input: 6406, output: 72), total: 74032/2560000
+2026-06-14 14:24:55,247 - INFO - --- Step 14 ---
+2026-06-14 14:24:57,137 - INFO - [API调用] model=ep-20260415212058-bx48w, url=https://ark.cn-beijing.volces.com/api/v3
+2026-06-14 14:25:03,204 - INFO - HTTP Request: POST https://ark.cn-beijing.volces.com/api/v3/chat/completions "HTTP/1.1 200 OK"
+2026-06-14 14:25:03,205 - INFO - Model output: Thought:
+- Progress: 已经回到房型页面，现在只显示了男生四人间和不满足的房型，看到下方有女生六人间床位，但没完全显示，需要向下滑动页面查看完整信息，找到单人女生床位房。
+- Next: 向下滑动页面，让女生床位房型完整显示出来，确认是否是目标房型。
+Action: scroll(start_point='<point>481 751</point>', end_point='<point>481 326</point>')
+2026-06-14 14:25:03,243 - INFO - Agent Output: action=SCROLL, params={'start_point': [481, 751], 'end_point': [481, 326]}
+2026-06-14 14:25:03,243 - INFO - Token usage: +6589 (input: 6478, output: 111), total: 80621/2560000
+2026-06-14 14:25:05,122 - INFO - --- Step 15 ---
+2026-06-14 14:25:07,061 - INFO - [API调用] model=ep-20260415212058-bx48w, url=https://ark.cn-beijing.volces.com/api/v3
+2026-06-14 14:25:12,675 - INFO - HTTP Request: POST https://ark.cn-beijing.volces.com/api/v3/chat/completions "HTTP/1.1 200 OK"
+2026-06-14 14:25:12,676 - INFO - Model output: Thought: - Progress: 滑动后不小心进入了点评区域，现在房型列表被推出屏幕了，需要向上滑动页面（反向滚动回到房型区域），重新找到女生床位房型。
+- Next: 向上滑动页面，回到房型列表部分，继续查找单人女生床位房。
+Action: scroll(start_point='<point>471 200</point>', end_point='<point>471 700</point>')
+2026-06-14 14:25:12,716 - INFO - Agent Output: action=SCROLL, params={'start_point': [471, 200], 'end_point': [471, 700]}
+2026-06-14 14:25:12,716 - INFO - Token usage: +6666 (input: 6568, output: 98), total: 87287/2560000
+2026-06-14 14:25:14,612 - INFO - --- Step 16 ---
+2026-06-14 14:25:16,537 - INFO - [API调用] model=ep-20260415212058-bx48w, url=https://ark.cn-beijing.volces.com/api/v3
+2026-06-14 14:25:22,289 - INFO - HTTP Request: POST https://ark.cn-beijing.volces.com/api/v3/chat/completions "HTTP/1.1 200 OK"
+2026-06-14 14:25:22,289 - INFO - Model output: Thought: - Progress: 现在回到了房型床位房列表，目前只看到男生四人间和不满足要求的房型，女生六人间床位还在页面下方，需要向下滑动页面显示出完整的女生房型信息。
+- Next: 向下滑动页面，让女生床位房型完整显示，找到单人女生床位房。
+Action: scroll(start_point='<point>460 798</point>', end_point='<point>460 450</point>')
+2026-06-14 14:25:22,329 - INFO - Agent Output: action=SCROLL, params={'start_point': [460, 798], 'end_point': [460, 450]}
+2026-06-14 14:25:22,329 - INFO - Token usage: +6769 (input: 6662, output: 107), total: 94056/2560000
+2026-06-14 14:25:24,207 - INFO - --- Step 17 ---
+2026-06-14 14:25:25,934 - INFO - [API调用] model=ep-20260415212058-bx48w, url=https://ark.cn-beijing.volces.com/api/v3
+2026-06-14 14:25:30,483 - INFO - HTTP Request: POST https://ark.cn-beijing.volces.com/api/v3/chat/completions "HTTP/1.1 200 OK"
+2026-06-14 14:25:30,484 - INFO - Model output: Thought: - Progress: 现在找到了女生六人间（床位），这就是单人女生床位房（1人入住的床位），是最便宜酒店里的目标房型，接下来需要点击“订”按钮进行预订。
+- Next: 点击女生六人间（床位）对应的蓝色“订”按钮，开始预订该房型。
+Action: click(point='<point>838 469</point>')
+2026-06-14 14:25:30,522 - INFO - Agent Output: action=CLICK, params={'point': [838, 469]}
+2026-06-14 14:25:30,522 - INFO - Token usage: +6829 (input: 6738, output: 91), total: 100885/2560000
+2026-06-14 14:25:32,082 - INFO - --- Step 18 ---
+2026-06-14 14:25:35,337 - INFO - [API调用] model=ep-20260415212058-bx48w, url=https://ark.cn-beijing.volces.com/api/v3
+2026-06-14 14:25:39,431 - INFO - HTTP Request: POST https://ark.cn-beijing.volces.com/api/v3/chat/completions "HTTP/1.1 200 OK"
+2026-06-14 14:25:39,431 - INFO - Model output: Thought: - Progress: 现在已经进入了女生六人间（床位）的详情页面，确认这就是目标房型，接下来需要点击“订在线付”按钮来进行预订操作。 - Next: 点击页面右下角蓝色的“订在线付”按钮，继续完成预订流程。
+Action: click(point='<point>871 908</point>')
+2026-06-14 14:25:39,470 - INFO - Agent Output: action=CLICK, params={'point': [871, 908]}
+2026-06-14 14:25:39,470 - INFO - Token usage: +6847 (input: 6766, output: 81), total: 107732/2560000
+2026-06-14 14:25:41,287 - INFO - --- Step 19 ---
+2026-06-14 14:25:43,184 - INFO - [API调用] model=ep-20260415212058-bx48w, url=https://ark.cn-beijing.volces.com/api/v3
+2026-06-14 14:25:48,792 - INFO - HTTP Request: POST https://ark.cn-beijing.volces.com/api/v3/chat/completions "HTTP/1.1 200 OK"
+2026-06-14 14:25:48,793 - INFO - Model output: Thought:
+- Progress: 现在弹出了预订提示，告知此房型不满足床位房筛选，但我们已经确定这就是女生床位房型，需要继续预订。
+- Next: 点击弹窗中的蓝色“继续预订”按钮，继续完成预订流程。
+Action: click(point='<point>679 542</point>')
+2026-06-14 14:25:48,832 - INFO - Agent Output: action=CLICK, params={'point': [679, 542]}
+2026-06-14 14:25:48,832 - INFO - Token usage: +6859 (input: 6784, output: 75), total: 114591/2560000
+2026-06-14 14:25:50,384 - INFO - --- Step 20 ---
+2026-06-14 14:25:52,078 - INFO - [API调用] model=ep-20260415212058-bx48w, url=https://ark.cn-beijing.volces.com/api/v3
+2026-06-14 14:25:58,022 - INFO - HTTP Request: POST https://ark.cn-beijing.volces.com/api/v3/chat/completions "HTTP/1.1 200 OK"
+2026-06-14 14:25:58,023 - INFO - Model output: Thought:
+- Progress: 现在已经成功进入预订的支付确认页面，完成了选择酒店（低价优先最便宜的）、选择6月28日到6月30日、找到女生单人床位房并进入预订确认页的所有流程，按照规则不需要点击最终付款按钮，任务已经完成。
+- Next: 任务已经推进到支付确认页，不需要进行支付操作，直接完成任务。
+Action: complete(content='已成功在携程旅行找到丽江6月28日到6月30日低价优先排序中最便宜酒店的单人女生床位房，并进入预订支付确认页面，任务完成')
+2026-06-14 14:25:58,062 - INFO - Agent Output: action=COMPLETE, params={}
+2026-06-14 14:25:58,062 - INFO - Token usage: +6950 (input: 6816, output: 134), total: 121541/2560000
+2026-06-14 14:25:58,164 - INFO - Agent 返回 COMPLETE，任务完成
+2026-06-14 14:25:58,164 - INFO - 用例 step_onekey_B_0001 执行结束: exit_reason=agent_completed, steps=20
+2026-06-14 14:25:58,164 - INFO - data.json 已保存: output_4/step_onekey_B_0001/data.json
+2026-06-14 14:26:09,929 - INFO - 汇总图已保存: output_4/step_onekey_B_0001/summary.png
+2026-06-14 14:26:09,929 - INFO - summary.png 已生成: output_4/step_onekey_B_0001/summary.png
+2026-06-14 14:26:09,929 - INFO - 进度已保存: output_4/run_metadata.json
+2026-06-14 14:26:09,930 - INFO - ==================================================
+2026-06-14 14:26:09,930 - INFO - 全部用例执行完毕: 1/1 完成, 0 失败
+2026-06-14 14:26:09,930 - INFO - ==================================================
+2026-06-14 14:26:09,930 - INFO - ============================================================
+2026-06-14 14:26:09,930 - INFO - 跑测完成!
+2026-06-14 14:26:09,930 - INFO - 总用例数: 1
+2026-06-14 14:26:09,930 - INFO - 完成: 1
+2026-06-14 14:26:09,930 - INFO - 失败: 0
+2026-06-14 14:26:09,930 - INFO - 总耗时: 199.1s
+2026-06-14 14:26:09,930 - INFO - 结果目录: /Work/ljc/juesai/code_student/output_4
+2026-06-14 14:26:09,930 - INFO - ============================================================
+2026-06-14 14:26:09,930 - INFO - 
+下一步: python generate_html.py  # 生成打分页面
+2026-06-14 16:51:15,902 - INFO - ============================================================
+2026-06-14 16:51:15,902 - INFO - 决赛 GUI Agent 批量跑测
+2026-06-14 16:51:15,902 - INFO - 启动时间: 2026-06-14T16:51:15.902412
+2026-06-14 16:51:15,902 - INFO - ============================================================
+2026-06-14 16:51:15,902 - INFO - 正在连接 ADB 设备...
+2026-06-14 16:51:16,335 - INFO - 已连接设备: FY2426910012
+2026-06-14 16:51:16,946 - INFO - 屏幕分辨率: 1216x2688
+2026-06-14 16:51:17,536 - INFO - ADB Keyboard 输入法已为当前输入法
+2026-06-14 16:51:17,536 - INFO - 设备已就绪: FY2426910012 (1216x2688)
+2026-06-14 16:51:17,536 - INFO - 正在加载 Agent...
+2026-06-14 16:51:17,540 - INFO - DeviceController.input_text patched (pre-tap + ADB Keyboard for all text)
+2026-06-14 16:51:17,540 - INFO - Agent state reset
+2026-06-14 16:51:17,540 - INFO - Agent 已加载
+2026-06-14 16:51:17,540 - INFO - 测试用例文件: tasks/tasks_4.json
+2026-06-14 16:51:17,540 - INFO - 输出目录: output_4
+2026-06-14 16:51:17,540 - INFO - 断点续跑: 否
+2026-06-14 16:51:17,540 - INFO - ------------------------------------------------------------
+2026-06-14 16:51:17,541 - INFO - ===== 开始执行用例: step_onekey_B_0001 =====
+2026-06-14 16:51:17,541 - INFO - 指令: 在携程旅行的酒店里预订6月28日到6月30日丽江低价优先里最便宜的酒店的单人女生床位房
+2026-06-14 16:51:17,541 - INFO - Agent state reset
+2026-06-14 16:51:20,377 - INFO - --- Step 1 ---
+2026-06-14 16:51:25,294 - INFO - [API调用] model=ep-20260415212058-bx48w, url=https://ark.cn-beijing.volces.com/api/v3
+2026-06-14 16:51:28,096 - INFO - HTTP Request: POST https://ark.cn-beijing.volces.com/api/v3/chat/completions "HTTP/1.1 200 OK"
+2026-06-14 16:51:28,101 - INFO - Model output: Thought:
+- LastEffect: N/A
+- Progress: 0/1 done,需要打开携程旅行App进入酒店板块开始预订流程
+- Next: 打开携程旅行应用
+Action: open(app_name='携程旅行')
+2026-06-14 16:51:28,144 - INFO - Agent Output: action=OPEN, params={'app_name': '携程旅行'}
+2026-06-14 16:51:28,144 - INFO - Token usage: +4168 (input: 4119, output: 49), total: 4168/2560000
+2026-06-14 16:51:31,015 - INFO - --- Step 2 ---
+2026-06-14 16:51:34,383 - INFO - [API调用] model=ep-20260415212058-bx48w, url=https://ark.cn-beijing.volces.com/api/v3
+2026-06-14 16:51:38,164 - INFO - HTTP Request: POST https://ark.cn-beijing.volces.com/api/v3/chat/completions "HTTP/1.1 200 OK"
+2026-06-14 16:51:38,165 - INFO - Model output: Thought:
+- LastEffect: 打开携程旅行后成功进入首页，左上角可见"酒店"功能入口，上一步生效。
+- Progress: 0/1 done,已经打开携程App，接下来需要进入酒店板块开始预订。
+- Next: 点击左上角红色的"酒店"按钮进入酒店预订页面。
+Action: click(point='<point>121 139</point>')
+2026-06-14 16:51:38,207 - INFO - Pre-tap updated to [121, 139] (top CLICK y=139)
+2026-06-14 16:51:38,207 - INFO - Agent Output: action=CLICK, params={'point': [121, 139]}
+2026-06-14 16:51:38,207 - INFO - Token usage: +5591 (input: 5502, output: 89), total: 9759/2560000
+2026-06-14 16:51:40,037 - INFO - --- Step 3 ---
+2026-06-14 16:51:44,342 - INFO - [API调用] model=ep-20260415212058-bx48w, url=https://ark.cn-beijing.volces.com/api/v3
+2026-06-14 16:51:49,504 - INFO - HTTP Request: POST https://ark.cn-beijing.volces.com/api/v3/chat/completions "HTTP/1.1 200 OK"
+2026-06-14 16:51:49,505 - INFO - Model output: Thought:
+- LastEffect: 进入酒店预订页面后，目的地已经是丽江，日期已经预设为6月28日到6月30日，房间和人数已经是1间房1成人，上一步生效。
+- Progress: 0/1 done,已经设置好目的地、日期和人数，接下来需要点击查询按钮获取酒店列表，之后按低价优先排序找到最便宜的酒店。
+- Next: 点击蓝色的"查询"按钮获取丽江符合日期条件的酒店列表。
+Action: click(point='<point>500 548</point>')
+2026-06-14 16:51:49,548 - INFO - Agent Output: action=CLICK, params={'point': [500, 548]}
+2026-06-14 16:51:49,549 - INFO - Token usage: +7103 (input: 6974, output: 129), total: 16862/2560000
+2026-06-14 16:51:51,605 - INFO - --- Step 4 ---
+2026-06-14 16:51:55,244 - INFO - [API调用] model=ep-20260415212058-bx48w, url=https://ark.cn-beijing.volces.com/api/v3
+2026-06-14 16:51:59,662 - INFO - HTTP Request: POST https://ark.cn-beijing.volces.com/api/v3/chat/completions "HTTP/1.1 200 OK"
+2026-06-14 16:51:59,663 - INFO - Model output: Thought: - LastEffect: 点击查询后成功获取到丽江的酒店列表，当前顶部排序选项显示"欢迎度排序"，需要切换为低价优先排序，上一步生效。
+- Progress: 0/1 done,已经获取酒店列表，接下来需要点击"欢迎度排序"按钮打开排序选项，选择低价优先排序。
+- Next: 点击左上角的"欢迎度排序"按钮，打开排序选择面板切换排序方式为低价优先。
+Action: click(point='<point>125 114</point>')
+2026-06-14 16:51:59,702 - INFO - Pre-tap updated to [125, 114] (top CLICK y=114)
+2026-06-14 16:51:59,702 - INFO - Agent Output: action=CLICK, params={'point': [125, 114]}
+2026-06-14 16:51:59,702 - INFO - Token usage: +7298 (input: 7179, output: 119), total: 24160/2560000
+2026-06-14 16:52:01,577 - INFO - --- Step 5 ---
+2026-06-14 16:52:04,508 - INFO - [API调用] model=ep-20260415212058-bx48w, url=https://ark.cn-beijing.volces.com/api/v3
+2026-06-14 16:52:07,999 - INFO - HTTP Request: POST https://ark.cn-beijing.volces.com/api/v3/chat/completions "HTTP/1.1 200 OK"
+2026-06-14 16:52:07,999 - INFO - Model output: Thought:
+- LastEffect: 点击"欢迎度排序"后成功打开排序选择面板，面板中可见"低价优先"选项，上一步生效。
+- Progress: 0/1 done,已经打开排序面板，接下来需要点击"低价优先"选项切换排序方式，得到按价格从低到高排序的酒店列表。
+- Next: 点击排序面板中的"低价优先"选项，将酒店列表按低价优先排序。
+Action: click(point='<point>100 268</point>')
+2026-06-14 16:52:08,039 - INFO - Agent Output: action=CLICK, params={'point': [100, 268]}
+2026-06-14 16:52:08,039 - INFO - Token usage: +7442 (input: 7326, output: 116), total: 31602/2560000
+2026-06-14 16:52:09,792 - INFO - --- Step 6 ---
+2026-06-14 16:52:11,911 - INFO - [API调用] model=ep-20260415212058-bx48w, url=https://ark.cn-beijing.volces.com/api/v3
+2026-06-14 16:52:16,008 - INFO - HTTP Request: POST https://ark.cn-beijing.volces.com/api/v3/chat/completions "HTTP/1.1 200 OK"
+2026-06-14 16:52:16,009 - INFO - Model output: Thought:
+- LastEffect: 点击"低价优先"后，页面正在加载中，所有酒店内容还未显示出来，上一步点击已触发但是内容未加载完成。
+- Progress: 0/1 done,已经完成排序方式切换，等待酒店列表加载完成。
+- Next: 等待页面加载完成，显示按低价优先排序后的酒店列表。
+Action: wait(seconds='3')
+2026-06-14 16:52:16,049 - INFO - Agent Output: action=WAIT, params={'seconds': 3}
+2026-06-14 16:52:16,049 - INFO - Token usage: +7514 (input: 7425, output: 89), total: 39116/2560000
+2026-06-14 16:52:20,139 - INFO - --- Step 7 ---
+2026-06-14 16:52:25,199 - INFO - [API调用] model=ep-20260415212058-bx48w, url=https://ark.cn-beijing.volces.com/api/v3
+2026-06-14 16:52:30,040 - INFO - HTTP Request: POST https://ark.cn-beijing.volces.com/api/v3/chat/completions "HTTP/1.1 200 OK"
+2026-06-14 16:52:30,040 - INFO - Model output: Thought:
+- LastEffect: 等待后成功加载出按低价优先排序后的酒店列表，第一个酒店是野火集·青年空间·欢乐旅行·悠闲Snowy青旅(束河古镇店)，价格4元起，是当前列表里最便宜的，上一步生效。
+- Progress: 0/1 done,已经加载出按低价优先排序的酒店列表，找到最便宜的酒店，接下来需要进入该酒店详情页查找单人女生床位房。
+- Next: 点击第一个酒店"野火集·青年空间·欢乐旅行·悠闲Snowy青旅(束河古镇店)"进入详情页，查找单人女生床位房。
+Action: click(point='<point>626 392</point>')
+2026-06-14 16:52:30,080 - INFO - Agent Output: action=CLICK, params={'point': [626, 392]}
+2026-06-14 16:52:30,081 - INFO - Token usage: +7642 (input: 7483, output: 159), total: 46758/2560000
+2026-06-14 16:52:31,931 - INFO - --- Step 8 ---
+2026-06-14 16:52:35,722 - INFO - [API调用] model=ep-20260415212058-bx48w, url=https://ark.cn-beijing.volces.com/api/v3
+2026-06-14 16:52:41,998 - INFO - HTTP Request: POST https://ark.cn-beijing.volces.com/api/v3/chat/completions "HTTP/1.1 200 OK"
+2026-06-14 16:52:41,999 - INFO - Model output: Thought:
+- LastEffect: 点击第一个酒店后成功进入该酒店详情页，当前页面显示了日期和房型分类，已有"床位房"标签，右下角可见"查看房型"按钮，上一步生效。
+- Progress: 0/1 done,已经进入最便宜酒店的详情页，接下来需要点击筛选或查看房型找到单人女生床位房，先点击"筛选"按钮筛选出女生床位房。
+- Next: 点击房型区域的"筛选"按钮，打开筛选面板选择女生床位房。
+Action: click(point='<point>726 750</point>')
+2026-06-14 16:52:42,039 - INFO - Agent Output: action=CLICK, params={'point': [726, 750]}
+2026-06-14 16:52:42,039 - INFO - Token usage: +7792 (input: 7660, output: 132), total: 54550/2560000
+2026-06-14 16:52:44,132 - INFO - --- Step 9 ---
+2026-06-14 16:52:47,196 - INFO - [API调用] model=ep-20260415212058-bx48w, url=https://ark.cn-beijing.volces.com/api/v3
+2026-06-14 16:52:50,651 - INFO - HTTP Request: POST https://ark.cn-beijing.volces.com/api/v3/chat/completions "HTTP/1.1 200 OK"
+2026-06-14 16:52:50,652 - INFO - Model output: Thought: - LastEffect: 点击筛选后成功打开筛选面板，面板中特色房型下有"床位房"选项，需要选中它来筛选床位房，之后再找女生床位相关选项，上一步生效。 - Progress: 0/1 done,已经打开筛选面板，现在需要点击特色房型里的"床位房"选项，选中它来筛选出床位房。
+- Next: 点击特色房型区域的"床位房"按钮，选中该房型进行筛选。
+Action: click(point='<point>500 408</point>')
+2026-06-14 16:52:50,691 - INFO - Agent Output: action=CLICK, params={'point': [500, 408]}
+2026-06-14 16:52:50,691 - INFO - Token usage: +7955 (input: 7831, output: 124), total: 62505/2560000
+2026-06-14 16:52:52,443 - INFO - --- Step 10 ---
+2026-06-14 16:52:55,798 - INFO - [API调用] model=ep-20260415212058-bx48w, url=https://ark.cn-beijing.volces.com/api/v3
+2026-06-14 16:52:59,552 - INFO - HTTP Request: POST https://ark.cn-beijing.volces.com/api/v3/chat/completions "HTTP/1.1 200 OK"
+2026-06-14 16:52:59,553 - INFO - Model output: Thought:
+- LastEffect: 已经选中特色房型里的"床位房"选项，当前筛选面板中床位房已勾选，下一步需要点击"完成"按钮应用筛选条件，查看筛选后的床位房房型。
+- Progress: 0/1 done,已经在筛选面板选中床位房，接下来需要点击完成应用筛选，找到单人女生床位房。
+- Next: 点击筛选面板右下角蓝色的"完成"按钮，确认筛选条件并查看筛选后的房型列表。
+Action: click(point='<point>745 858</point>')
+2026-06-14 16:52:59,591 - INFO - Agent Output: action=CLICK, params={'point': [745, 858]}
+2026-06-14 16:52:59,591 - INFO - Token usage: +8045 (input: 7921, output: 124), total: 70550/2560000
+2026-06-14 16:53:01,462 - INFO - --- Step 11 ---
+2026-06-14 16:53:04,543 - INFO - [API调用] model=ep-20260415212058-bx48w, url=https://ark.cn-beijing.volces.com/api/v3
+2026-06-14 16:53:08,628 - INFO - HTTP Request: POST https://ark.cn-beijing.volces.com/api/v3/chat/completions "HTTP/1.1 200 OK"
+2026-06-14 16:53:08,628 - INFO - Model output: Thought:
+- LastEffect: 点击完成后成功筛选出床位房房型，当前页面显示了多个床位房，可见女生六人间(床位)选项，是女生床位房，上一步生效。
+- Progress: 0/1 done,已经筛选出床位房，找到女生床位房，接下来需要向上滑动页面查看完整的女生床位房型信息，确认单人女生床位房并进入预订流程。
+- Next: 向上滑动页面，显示完整的女生六人间(床位)房型信息，确认是否为目标房型。
+Action: scroll(start_point='<point>500 850</point>', end_point='<point>500 400</point>')
+2026-06-14 16:53:08,667 - INFO - Agent Output: action=SCROLL, params={'start_point': [500, 850], 'end_point': [500, 600]}
+2026-06-14 16:53:08,667 - INFO - Token usage: +8157 (input: 8005, output: 152), total: 78707/2560000
+2026-06-14 16:53:10,870 - INFO - --- Step 12 ---
+2026-06-14 16:53:13,527 - INFO - [API调用] model=ep-20260415212058-bx48w, url=https://ark.cn-beijing.volces.com/api/v3
+2026-06-14 16:53:17,748 - INFO - HTTP Request: POST https://ark.cn-beijing.volces.com/api/v3/chat/completions "HTTP/1.1 200 OK"
+2026-06-14 16:53:17,748 - INFO - Model output: Thought:
+- LastEffect: 向上滑动后，页面显示完整的女生六人间(床位)房型信息，该房型是1人入住的单人女生床位房，价格90元/2晚，右侧有蓝色"订"按钮，上一步生效。
+- Progress: 0/1 done,已经找到目标单人女生床位房，接下来需要点击"订"按钮进入预订流程。
+- Next: 点击女生六人间(床位)房型右侧蓝色的"订"按钮，开始预订该房型。
+Action: click(point='<point>844 528</point>')
+2026-06-14 16:53:17,786 - INFO - Agent Output: action=CLICK, params={'point': [844, 528]}
+2026-06-14 16:53:17,786 - INFO - Token usage: +8249 (input: 8117, output: 132), total: 86956/2560000
+2026-06-14 16:53:19,499 - INFO - --- Step 13 ---
+2026-06-14 16:53:22,009 - INFO - [API调用] model=ep-20260415212058-bx48w, url=https://ark.cn-beijing.volces.com/api/v3
+2026-06-14 16:53:26,733 - INFO - HTTP Request: POST https://ark.cn-beijing.volces.com/api/v3/chat/completions "HTTP/1.1 200 OK"
+2026-06-14 16:53:26,734 - INFO - Model output: Thought:
+- LastEffect: 点击"订"按钮后弹出预订提示弹窗，提示此房型不满足"床位房"，询问是否继续预订，上一步点击已触发弹窗，当前可见弹窗，上一步生效。
+- Progress: 0/1 done,已找到目标单人女生床位房并点击预订，弹出确认预订提示，需要确认继续预订。
+- Next: 点击弹窗中蓝色的"继续预订"按钮，确认继续预订该房型。
+Action: click(point='<point>679 542</point>')
+2026-06-14 16:53:26,773 - INFO - Agent Output: action=CLICK, params={'point': [679, 542]}
+2026-06-14 16:53:26,773 - INFO - Token usage: +8319 (input: 8197, output: 122), total: 95275/2560000
+2026-06-14 16:53:28,554 - INFO - --- Step 14 ---
+2026-06-14 16:53:30,739 - INFO - [API调用] model=ep-20260415212058-bx48w, url=https://ark.cn-beijing.volces.com/api/v3
+2026-06-14 16:53:35,389 - INFO - HTTP Request: POST https://ark.cn-beijing.volces.com/api/v3/chat/completions "HTTP/1.1 200 OK"
+2026-06-14 16:53:35,390 - INFO - Model output: Thought:
+- LastEffect: 点击"继续预订"按钮后，成功进入了预订信息填写页面，页面显示该房型就是女生六人间(床位)，住客信息已经填写完毕，页面底部有"立即支付"按钮，上一步生效。
+- Progress: 0/1 done，已经完成了选择酒店、选择房型、进入预订支付页面，任务要求只需要推进到预订页面，不需要真实支付。
+- Next: 任务已经完成，已经成功预订了丽江低价优先里最便宜酒店的单人女生床位房，到达支付页面。
+Action: complete(content='已成功在携程旅行预订6月28日到6月30日丽江低价优先里最便宜的酒店野火集·青年空间·欢乐旅行·悠闲Snowy青旅(束河古镇店)的单人女生六人间床位房，已进入预订支付页面，任务完成')
+2026-06-14 16:53:35,428 - INFO - Agent Output: action=COMPLETE, params={}
+2026-06-14 16:53:35,428 - INFO - Token usage: +8418 (input: 8229, output: 189), total: 103693/2560000
+2026-06-14 16:53:35,532 - INFO - Agent 返回 COMPLETE，任务完成
+2026-06-14 16:53:35,532 - INFO - 用例 step_onekey_B_0001 执行结束: exit_reason=agent_completed, steps=14
+2026-06-14 16:53:35,533 - INFO - data.json 已保存: output_4/step_onekey_B_0001/data.json
+2026-06-14 16:53:44,219 - INFO - 汇总图已保存: output_4/step_onekey_B_0001/summary.png
+2026-06-14 16:53:44,219 - INFO - summary.png 已生成: output_4/step_onekey_B_0001/summary.png
+2026-06-14 16:53:44,220 - INFO - 进度已保存: output_4/run_metadata.json
+2026-06-14 16:53:44,220 - INFO - ==================================================
+2026-06-14 16:53:44,220 - INFO - 全部用例执行完毕: 1/1 完成, 0 失败
+2026-06-14 16:53:44,220 - INFO - ==================================================
+2026-06-14 16:53:44,220 - INFO - ============================================================
+2026-06-14 16:53:44,220 - INFO - 跑测完成!
+2026-06-14 16:53:44,220 - INFO - 总用例数: 1
+2026-06-14 16:53:44,220 - INFO - 完成: 1
+2026-06-14 16:53:44,220 - INFO - 失败: 0
+2026-06-14 16:53:44,220 - INFO - 总耗时: 146.7s
+2026-06-14 16:53:44,220 - INFO - 结果目录: /Work/ljc/juesai/code_student/output_4
+2026-06-14 16:53:44,220 - INFO - ============================================================
+2026-06-14 16:53:44,220 - INFO - 
+下一步: python generate_html.py  # 生成打分页面

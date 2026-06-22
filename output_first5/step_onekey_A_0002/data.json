@@ -1,0 +1,97 @@
+{
+  "case_id": "step_onekey_A_0002",
+  "instruction": "在QQ音乐搜索光年之外并播放邓紫棋演唱的版本",
+  "max_steps": 30,
+  "device": {
+    "width": 1216,
+    "height": 2688
+  },
+  "execution": {
+    "total_steps": 7,
+    "exit_reason": "agent_completed",
+    "errors": []
+  },
+  "steps": [
+    {
+      "step": 1,
+      "action": "OPEN",
+      "params": {
+        "app_name": "QQ音乐"
+      },
+      "raw_output": "Thought:\n- Progress: 现在在手机桌面，还没打开QQ音乐，需要先启动QQ音乐应用。\n- Next: 打开QQ音乐应用，开始后续的搜索操作。\nAction: open(app_name='QQ音乐')",
+      "screenshot": "step_01.png",
+      "execution_error": null
+    },
+    {
+      "step": 2,
+      "action": "CLICK",
+      "params": {
+        "point": [
+          886,
+          47
+        ]
+      },
+      "raw_output": "Thought: - Progress: 现在QQ音乐启动后出现了开屏广告，右上角有跳过按钮，需要跳过广告进入主界面才能进行搜索。 - Next: 点击右上角的“跳过”按钮，跳过广告进入QQ音乐主界面。\nAction: click(point='<point>886 47</point>')",
+      "screenshot": "step_02.png",
+      "execution_error": null
+    },
+    {
+      "step": 3,
+      "action": "CLICK",
+      "params": {
+        "point": [
+          581,
+          63
+        ]
+      },
+      "raw_output": "Thought:\n- Progress: 已经跳过广告进入QQ音乐搜索页面，现在需要在搜索框输入“光年之外”来搜索目标歌曲。\n- Next: 点击搜索框激活它，然后输入“光年之外”进行搜索。\nAction: click(point='<point>581 63</point>')",
+      "screenshot": "step_03.png",
+      "execution_error": null
+    },
+    {
+      "step": 4,
+      "action": "TYPE",
+      "params": {
+        "text": "光年之外"
+      },
+      "raw_output": "Thought:\n- Progress: 已经成功激活了QQ音乐顶部的搜索框，现在需要输入搜索关键词“光年之外”。\n- Next: 在已激活的搜索框中输入“光年之外”，为后续搜索做准备。\nAction: type(content='光年之外')",
+      "screenshot": "step_04.png",
+      "execution_error": null
+    },
+    {
+      "step": 5,
+      "action": "CLICK",
+      "params": {
+        "point": [
+          370,
+          147
+        ]
+      },
+      "raw_output": "Thought: - Progress: 已经在搜索框输入了“光年之外”，搜索建议里第一个就是目标歌曲单曲，由邓紫棋演唱，直接点击这个单曲条目就能播放。 - Next: 点击顶部显示的“单曲: 光年之外 G.E.M. 邓紫棋”条目，播放邓紫棋演唱的版本。\nAction: click(point='<point>370 147</point>')",
+      "screenshot": "step_05.png",
+      "execution_error": null
+    },
+    {
+      "step": 6,
+      "action": "CLICK",
+      "params": {
+        "point": [
+          930,
+          273
+        ]
+      },
+      "raw_output": "Thought: 已经点击了邓紫棋演唱的《光年之外》，歌曲已经开始试听，现在弹出了会员开通弹窗，需要关闭弹窗确认播放状态，任务已经完成了搜索和播放，只需要关闭弹窗即可。\nNext: 点击弹窗右上角的关闭按钮，关闭会员开通弹窗，确认歌曲正在播放。\nTargetBox: [900, 254, 968, 292]\nAction: click(point='<point>930 273</point>')",
+      "screenshot": "step_06.png",
+      "execution_error": null
+    },
+    {
+      "step": 7,
+      "action": "COMPLETE",
+      "params": {},
+      "raw_output": "Thought:\n- Progress: 已经完成了在QQ音乐搜索“光年之外”，并成功打开了邓紫棋演唱的版本，现在歌曲已经处于播放状态，进度条显示播放到00:10。\n- Next: 任务已经完成，邓紫棋演唱的《光年之外》正在播放，不需要再进行额外操作。\nAction: complete(content='已在QQ音乐搜索光年之外并播放邓紫棋演唱的版本，当前歌曲已处于试听播放状态，任务完成')",
+      "screenshot": "step_07.png",
+      "execution_error": null
+    }
+  ],
+  "summary_visualization": "summary.png"
+}

@@ -1,0 +1,8 @@
+[
+  {
+    "id": "step_onekey_A_0003",
+    "instruction": "去爱奇艺打开狂飙的评论区，发布评论：太好看了",
+    "app": "爱奇艺",
+    "max_steps": 30
+  }
+]

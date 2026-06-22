@@ -1,0 +1,8 @@
+[
+  {
+    "id": "step_onekey_B_0012",
+    "instruction": "打开得到App搜索skill开发相关课程，找到四个评分超过4.8的加入我的书单",
+    "app": "得到",
+    "max_steps": 50
+  }
+]

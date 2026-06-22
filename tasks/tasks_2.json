@@ -1,0 +1,8 @@
+[
+  {
+    "id": "step_onekey_A_0009",
+    "instruction": "在哔哩哔哩搜索Python入门教程并播放播放量最高的",
+    "app": "哔哩哔哩",
+    "max_steps": 30
+  }
+]

@@ -1,0 +1,8 @@
+[
+  {
+    "id": "step_onekey_A_0002",
+    "instruction": "在QQ音乐搜索光年之外并播放邓紫棋演唱的版本",
+    "app": "QQ音乐",
+    "max_steps": 30
+  }
+]
